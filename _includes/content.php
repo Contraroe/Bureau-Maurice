@@ -20,6 +20,6 @@
 	</div>	
 	
 
-	<?php include '_includes/search.php' ?>
+	<?php include '_php/search.php' ?>
 </div>
 
