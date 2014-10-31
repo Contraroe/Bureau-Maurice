@@ -145,7 +145,7 @@
   margin-top: 10px;
   float: left;
 }
-/* line 46, ../__compass/sass/_content.sass */
+/* line 45, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info {
   position: relative;
   text-align: left;
@@ -158,7 +158,7 @@
   font-weight: 100;
   padding: 20px 0;
 }
-/* line 57, ../__compass/sass/_content.sass */
+/* line 56, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h2 {
   height: auto;
   display: block;
@@ -166,26 +166,26 @@
   font-size: 200%;
   margin-top: 10px;
 }
-/* line 64, ../__compass/sass/_content.sass */
+/* line 62, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h6 {
   display: block;
   width: auto;
   font-weight: 800;
   height: auto;
-  background: #00c8c8;
+  background: black;
   color: white;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 2px;
 }
-/* line 74, ../__compass/sass/_content.sass */
+/* line 72, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra {
   position: absolute;
   top: 290px;
   right: 10px;
   width: 40px;
   height: 40px;
-  background: black;
+  background: #00c8c8;
   border-radius: 20px;
   line-height: 40px;
   text-align: center;
@@ -195,12 +195,12 @@
   font-size: 200%;
   font-weight: 400;
 }
-/* line 89, ../__compass/sass/_content.sass */
+/* line 87, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra:hover {
   color: white;
   background: red;
 }
-/* line 92, ../__compass/sass/_content.sass */
+/* line 90, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img {
   overflow: hidden;
   width: 99%;
@@ -210,7 +210,7 @@
   margin-right: 50px;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 100, ../__compass/sass/_content.sass */
+/* line 98, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img img {
   width: 100%;
   margin: 0;
@@ -371,7 +371,7 @@ a[href^="http://maps.google.com/maps"] {
 #content #find_cont #clear input[type="submit"], #content #data_cont #clear input[type="submit"] {
   width: auto;
   border-radius: 3px;
-  background-color: transparent;
+  background-color: #00c8c8;
   color: white;
   font-weight: 100;
   height: auto;
