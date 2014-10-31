@@ -34,11 +34,11 @@
 
 	<!-- Dbase Content Layout -->
 	<div id="frituren">
-		<div id="img">
-			<img src="_img/zaken/<?php echo htmlspecialchars($f10);?>" alt="<?php echo htmlspecialchars($f10); ?>">
-		</div>
 		<div id="info">
 			<h2><?php echo htmlspecialchars($f1); ?></h2>
+			<div id="img">
+				<img src="_img/zaken/<?php echo htmlspecialchars($f10);?>" alt="<?php echo htmlspecialchars($f10); ?>">
+			</div>
 			<h6>Adres</h6> 
 			<?php echo htmlspecialchars($f3); ?> <?php echo htmlspecialchars($f4); ?> <?php echo htmlspecialchars($f5); ?><br>
 			<?php echo htmlspecialchars($f2); ?> <?php echo htmlspecialchars($f1); ?><br>
@@ -77,12 +77,11 @@
 
 	<!-- Dbase Content Layout -->
 	<div id="frituren">
-		
 		<div id="info">
 			<h2><?php echo htmlspecialchars($f1); ?></h2>
 			<div id="img">
-			<img src="_img/zaken/<?php echo htmlspecialchars($f10);?>" alt="<?php echo htmlspecialchars($f10); ?>">
-		</div>
+				<img src="_img/zaken/<?php echo htmlspecialchars($f10);?>" alt="<?php echo htmlspecialchars($f10); ?>">
+			</div>
 			<h6>Adress</h6> 
 			<?php echo htmlspecialchars($f3); ?> <?php echo htmlspecialchars($f4); ?> <?php echo htmlspecialchars($f5); ?><br>
 			<?php echo htmlspecialchars($f2); ?> <?php echo htmlspecialchars($f1); ?><br>
