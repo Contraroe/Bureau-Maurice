@@ -290,53 +290,26 @@ a[href^="http://maps.google.com/maps"] {
   margin: auto;
 }
 /* line 16, ../__compass/sass/_searchbar.sass */
-#content #find_cont #search, #content #data_cont #search {
-  padding-left: 5px;
-}
-/* line 18, ../__compass/sass/_searchbar.sass */
-#content #find_cont #search input, #content #data_cont #search input,
-#content #find_cont #search label,
-#content #data_cont #search label {
-  height: 20px;
-  padding: 5px;
-  border: 0;
-  font-size: 70%;
-  border-radius: 3px;
-  background: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 100;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-/* line 29, ../__compass/sass/_searchbar.sass */
-#content #find_cont #search label, #content #data_cont #search label {
-  background: none;
-  font-size: 60%;
-  color: rgba(255, 255, 255, 0.3);
-  border: none;
-}
-/* line 34, ../__compass/sass/_searchbar.sass */
-#content #find_cont #search input[type="submit"], #content #data_cont #search input[type="submit"] {
-  width: 40px;
-  border-radius: 3px;
-  background-color: red;
-  color: white;
-  font-weight: 100;
-  height: auto;
-}
-/* line 42, ../__compass/sass/_searchbar.sass */
-#content #find_cont #search input[type="submit"]:hover, #content #data_cont #search input[type="submit"]:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: black;
-}
-/* line 45, ../__compass/sass/_searchbar.sass */
 #content #find_cont #clear, #content #data_cont #clear {
   padding-left: 5px;
   float: left;
 }
-/* line 48, ../__compass/sass/_searchbar.sass */
+/* line 19, ../__compass/sass/_searchbar.sass */
 #content #find_cont #clear input, #content #data_cont #clear input,
 #content #find_cont #clear label,
-#content #data_cont #clear label {
+#content #data_cont #clear label,
+#content #find_cont #clear #search input,
+#content #find_cont #search #clear input,
+#content #data_cont #clear #search input,
+#content #data_cont #search #clear input,
+#content #find_cont #clear #search #find,
+#content #find_cont #search #clear #find,
+#content #data_cont #clear #search #find,
+#content #data_cont #search #clear #find,
+#content #find_cont #clear #search select,
+#content #find_cont #search #clear select,
+#content #data_cont #clear #search select,
+#content #data_cont #search #clear select {
   height: 20px;
   padding: 5px;
   border: 0;
@@ -346,14 +319,18 @@ a[href^="http://maps.google.com/maps"] {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 100;
 }
-/* line 58, ../__compass/sass/_searchbar.sass */
-#content #find_cont #clear label, #content #data_cont #clear label {
+/* line 29, ../__compass/sass/_searchbar.sass */
+#content #find_cont #clear label, #content #data_cont #clear label, #content #find_cont #clear #search input, #content #find_cont #search #clear input, #content #data_cont #clear #search input, #content #data_cont #search #clear input, #content #find_cont #clear #search #find, #content #find_cont #search #clear #find, #content #data_cont #clear #search #find, #content #data_cont #search #clear #find,
+#content #find_cont #clear #search select,
+#content #find_cont #search #clear select,
+#content #data_cont #clear #search select,
+#content #data_cont #search #clear select {
   background: none;
   font-size: 60%;
   color: rgba(255, 255, 255, 0.3);
   margin-left: 5px;
 }
-/* line 63, ../__compass/sass/_searchbar.sass */
+/* line 34, ../__compass/sass/_searchbar.sass */
 #content #find_cont #clear input[type="submit"], #content #data_cont #clear input[type="submit"] {
   width: 40px;
   border-radius: 3px;
@@ -362,12 +339,12 @@ a[href^="http://maps.google.com/maps"] {
   font-weight: 100;
   height: auto;
 }
-/* line 70, ../__compass/sass/_searchbar.sass */
+/* line 41, ../__compass/sass/_searchbar.sass */
 #content #find_cont #clear input[type="submit"]:hover, #content #data_cont #clear input[type="submit"]:hover {
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
 }
-/* line 74, ../__compass/sass/_searchbar.sass */
+/* line 45, ../__compass/sass/_searchbar.sass */
 #content #find_cont #clear input[type="submit"], #content #data_cont #clear input[type="submit"] {
   width: auto;
   border-radius: 3px;
@@ -377,12 +354,57 @@ a[href^="http://maps.google.com/maps"] {
   height: auto;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 82, ../__compass/sass/_searchbar.sass */
+/* line 53, ../__compass/sass/_searchbar.sass */
 #content #find_cont #clear input[type="submit"]:hover, #content #data_cont #clear input[type="submit"]:hover {
   background-color: red;
   color: white;
 }
-/* line 85, ../__compass/sass/_searchbar.sass */
+/* line 56, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search, #content #data_cont #search {
+  padding-left: 5px;
+}
+/* line 58, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search label, #content #data_cont #search label, #content #find_cont #search input, #content #data_cont #search input, #content #find_cont #search #find, #content #data_cont #search #find,
+#content #find_cont #search select,
+#content #data_cont #search select {
+  height: 20px;
+  padding: 5px;
+  border: 0;
+  font-size: 70%;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+/* line 71, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search #find, #content #data_cont #search #find,
+#content #find_cont #search select,
+#content #data_cont #search select {
+  font-weight: 100;
+  color: black;
+  width: 200px;
+  height: 20px;
+  font-size: 70%;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 80, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search input[type="submit"], #content #data_cont #search input[type="submit"] {
+  width: 40px;
+  border-radius: 3px;
+  background-color: red;
+  color: white;
+  font-weight: 100;
+  height: auto;
+  margin-right: 0px;
+}
+/* line 89, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search input[type="submit"]:hover, #content #data_cont #search input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+/* line 93, ../__compass/sass/_searchbar.sass */
 #content #data_cont {
   top: -80px;
   height: 80px;

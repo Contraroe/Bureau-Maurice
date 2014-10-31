@@ -13,35 +13,6 @@
 		#postcode
 			width: 978px
 			margin: auto
-		#search
-			padding-left: 5px
-			input,
-			label
-				height: 20px
-				padding: 5px
-				border: 0
-				font-size: 70%
-				border-radius: 3px
-				background: $wit_2
-				color: $wit_7
-				font-weight: 100
-				border: 1px solid $wit_1
-			label
-				background: none
-				font-size: 60%
-				color: $wit_3
-				border: none
-			input[type="submit"]
-				width: 40px
-				border-radius: 3px
-				background-color: $rood_10
-				color: $wit_10
-				// border: 1px solid $wit_10
-				font-weight: 100
-				height: auto
-				&:hover
-					background-color: $wit_7
-					color: $zwart_10
 		#clear
 			padding-left: 5px
 			float: left
@@ -82,6 +53,43 @@
 				&:hover
 					background-color: $rood_10
 					color: $wit_10
+		#search
+			padding-left: 5px
+			label
+				height: 20px
+				padding: 5px
+				border: 0
+				font-size: 70%
+				border-radius: 3px
+				background: $wit_2
+				color: $wit_7
+				font-weight: 100
+				border: 1px solid $wit_1
+				margin-right: 10px
+			input
+				@extend label
+			#find,
+			select
+				@extend label
+				font-weight: 100
+				color: $zwart_10
+				width: 200px
+				height: 20px
+				font-size: 70%
+				background: $wit_5
+			input[type="submit"]
+				width: 40px
+				border-radius: 3px
+				background-color: $rood_10
+				color: $wit_10
+				// border: 1px solid $wit_10
+				font-weight: 100
+				height: auto
+				margin-right: 0px
+				&:hover
+					background-color: $wit_7
+					color: $zwart_10
+
 	#data_cont
 		@extend #find_cont
 		top: -80px
