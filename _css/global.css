@@ -119,17 +119,33 @@
   margin-top: 100px;
 }
 /* line 22, ../__compass/sass/_content.sass */
+#content #wrapper #frituren.no {
+  width: 100%;
+  height: auto;
+  color: white;
+  margin: 0;
+  padding: 20px 0px;
+  border-radius: 10px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-size: 130%;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.2);
+  margin-top: 50px;
+  border: 0px;
+}
+/* line 36, ../__compass/sass/_content.sass */
 #content #wrapper #frituren {
   color: black;
   height: auto;
   overflow: hidden;
-  padding: 50px 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  width: 32%;
-  margin-right: 1.33%;
+  padding: 0px 0px;
+  width: 30%;
+  margin-right: 3.33%;
+  margin-top: 10px;
   float: left;
 }
-/* line 31, ../__compass/sass/_content.sass */
+/* line 46, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info {
   position: relative;
   text-align: left;
@@ -137,77 +153,68 @@
   height: auto;
   float: left;
   padding: 0px;
-  font-size: 100%;
+  font-size: 70%;
   border-radius: 20px;
   font-weight: 100;
+  padding: 20px 0;
 }
-/* line 42, ../__compass/sass/_content.sass */
+/* line 57, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h2 {
   height: auto;
   display: block;
   font-weight: 800;
-  border-bottom: 1px solid red;
+  font-size: 200%;
+  margin-top: 10px;
 }
-/* line 47, ../__compass/sass/_content.sass */
+/* line 64, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h6 {
   display: block;
-  width: 100%;
+  width: auto;
   font-weight: 800;
-  margin-top: 0px;
+  height: auto;
+  background: #00c8c8;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
-/* line 52, ../__compass/sass/_content.sass */
+/* line 74, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra {
   position: absolute;
-  bottom: -50px;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
-  line-height: 50px;
+  top: 290px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 20px;
+  line-height: 40px;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  color: rgba(0, 0, 0, 0.3);
+  color: white;
   cursor: pointer;
+  font-size: 200%;
+  font-weight: 400;
 }
-/* line 65, ../__compass/sass/_content.sass */
+/* line 89, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra:hover {
-  color: black;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  background: red;
 }
-/* line 69, ../__compass/sass/_content.sass */
+/* line 92, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img {
-  position: relative;
   overflow: hidden;
   width: 99%;
   height: auto;
-  overflow: hidden;
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
   margin-right: 50px;
-  float: left;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 80, ../__compass/sass/_content.sass */
+/* line 100, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img img {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-/* line 84, ../__compass/sass/_content.sass */
-#content #wrapper #frituren.no {
-  width: auto;
-  height: auto;
-  color: white;
-  padding: 20px;
-  border: 5px dotted white;
-  border-radius: 10px;
-  font-family: "Alegreya Sans", sans-serif;
-  font-weight: 400;
-  font-size: 130%;
-  text-align: center;
-  background: red;
 }
 
 /* line 1, ../__compass/sass/_footer.sass */

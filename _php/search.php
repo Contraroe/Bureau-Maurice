@@ -35,17 +35,17 @@
 	<!-- Dbase Content Layout -->
 	<div id="frituren">
 		<div id="info">
-			<h2><?php echo htmlspecialchars($f1); ?></h2>
+			<h2><?php echo htmlspecialchars($f1); ?></h2><div id="extra">+</div>
 			<div id="img">
 				<img src="_img/zaken/<?php echo htmlspecialchars($f10);?>" alt="<?php echo htmlspecialchars($f10); ?>">
 			</div>
-			<h6>Adres</h6> 
+			<h6>Frituur</h6> 
 			<?php echo htmlspecialchars($f3); ?> <?php echo htmlspecialchars($f4); ?> <?php echo htmlspecialchars($f5); ?><br>
-			<?php echo htmlspecialchars($f2); ?> <?php echo htmlspecialchars($f1); ?><br>
-			<h6>Prijs</h6> 
+			<?php echo htmlspecialchars($f2); ?> <?php echo htmlspecialchars($f1); ?><br><br>
+			<b>Prijs</b> : 
 			<?php echo htmlspecialchars($f6); ?> &euro;
 
-			<div id="extra">+</div>
+			
 		</div>
 	</div>
 
@@ -78,17 +78,17 @@
 	<!-- Dbase Content Layout -->
 	<div id="frituren">
 		<div id="info">
-			<h2><?php echo htmlspecialchars($f1); ?></h2>
+			<h2><?php echo htmlspecialchars($f1); ?></h2><div id="extra">+</div>
 			<div id="img">
 				<img src="_img/zaken/<?php echo htmlspecialchars($f10);?>" alt="<?php echo htmlspecialchars($f10); ?>">
 			</div>
-			<h6>Adress</h6> 
+			<h6>Frituur</h6> 
 			<?php echo htmlspecialchars($f3); ?> <?php echo htmlspecialchars($f4); ?> <?php echo htmlspecialchars($f5); ?><br>
-			<?php echo htmlspecialchars($f2); ?> <?php echo htmlspecialchars($f1); ?><br>
-			<h6>Prijs</h6> 
+			<?php echo htmlspecialchars($f2); ?> <?php echo htmlspecialchars($f1); ?><br><br>
+			<b>Prijs</b> : 
 			<?php echo htmlspecialchars($f6); ?> &euro;
 
-			<div id="extra">+</div>
+			
 		</div>
 	</div>
 
