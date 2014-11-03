@@ -23,7 +23,7 @@
 					<option value="7">&gt; 150.000 &euro;</option>
 				</select>  -->
 				<!-- <label>Zoek op plaatsnaam of postcode:</label> -->
-				<input type="text" name="find" id="find" value="Postcode" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Postcode':this.value;"/>
+				<input type="text" name="find" id="find" value="Postcode of plaats" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Postcode':this.value;"/>
 				<input type="submit" id="go" name="go" value="Ga" />
 			</form>
 			

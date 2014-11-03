@@ -25,19 +25,25 @@
 			$f5=html_entity_decode(mysql_result($result,$i,"bus"));
 			$f6=html_entity_decode(mysql_result($result,$i,"prijs"));
 			$f7=html_entity_decode(mysql_result($result,$i,"info"));
+			$f8=html_entity_decode(mysql_result($result,$i,"naam"));
 			$f10=html_entity_decode(mysql_result($result,$i,"foto"));
 	?>
 
 	<!-- Dbase Content Layout -->
-	<h1><?php echo htmlspecialchars($f1); ?></h1>
+	<h1><?php echo htmlspecialchars($f8);?></h1>
 
 	<div id="detail">
 		<div id="img">
 				<img src="_img/zaken/<?php echo htmlspecialchars($f10);?>" alt="<?php echo htmlspecialchars($f10); ?>">
 		</div>
-			
+		<h6>Omschrijving</h6>
+		<?php echo htmlspecialchars($f7); ?>
+		<h6>Adres</h6>
+		<?php echo htmlspecialchars($f3); ?> <?php echo htmlspecialchars($f4); ?><?php echo htmlspecialchars($f5); ?><br>
+		<?php echo htmlspecialchars($f2); ?><?php echo htmlspecialchars($f1); ?>
 
-
+		<h6>Prijs</h6>
+		<?php echo htmlspecialchars($f6); ?> &euro;
 	</div>
 		
 

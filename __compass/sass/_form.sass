@@ -1,0 +1,90 @@
+#wrapper
+	h1
+		margin-bottom: 50px
+		#small
+			font-size: 50%
+			font-weight: 200
+			margin-left: 50px
+			b 
+				color: $turk_10
+	#formcon
+		text-align: left
+		color: $zwart_10
+		::-webkit-input-placeholder
+			color: $zwart_8
+		::-moz-placeholder 
+			color: $zwart_8
+		:-ms-input-placeholder 
+			color: $zwart_8
+		input:-moz-placeholder 
+			color: $zwart_8
+		form
+			color: $zwart_8
+			b 
+				color: $turk_10
+			input[type=text],
+			input[type=email],
+			input
+				background: $zwart_3
+				border: 0px
+				border-radius: 5px
+				padding: 5px 10px
+				font-size: 65%
+				color: $zwart_10
+				font-weight: 200
+				margin-bottom: 20px
+				width: 30%
+			textarea
+				width: 60%
+				float: left
+				margin-right: 20px
+				background: $zwart_3
+				border: 0px
+				border-radius: 5px
+				padding: 5px 10px
+				font-size: 65%
+				color: $zwart_10
+				font-weight: 200
+				margin-bottom: 10px
+			#check
+				display: none
+			input[type=submit]
+				margin-right: 20px
+				background: $turk_10
+				color: $zwart_10
+			input[type=reset]
+				width: 15%
+				float: left
+				margin-top: 10px
+				background: $zwart_1
+				color: $zwart_10
+				&:hover
+					background: $rood_10
+					color: $wit_10
+			input[type=submit]
+				width: 15%
+				float: left
+				margin-top: 10px
+				background: $turk_10
+				color: $wit_10
+				&:hover
+					background: $rood_10
+			input[type=text],
+			input[type=email],
+			input[type=submit], 
+			input[type=reset], 
+			textarea
+				-webkit-transition: all 0.30s ease-in-out
+				-moz-transition: all 0.30s ease-in-out
+				-ms-transition: all 0.30s ease-in-out
+				-o-transition: all 0.30s ease-in-out
+				outline: none
+				border: 1px solid $none
+			input[type=text]:focus,
+			input[type=email]:focus,
+			input[type=submit]:focus, 
+			input[type=reset]:focus, 
+			textarea:focus
+				box-shadow: 0 0 3px $turk_10
+				border: 1px solid $turk_10
+

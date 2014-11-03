@@ -113,7 +113,7 @@
   color: black;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 200%;
-  font-weight: 100;
+  font-weight: 400;
   display: block;
   border-bottom: 1px solid black;
   margin-top: 100px;
@@ -183,11 +183,12 @@
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 2px;
+  border-radius: 5px;
 }
-/* line 76, ../__compass/sass/_content.sass */
+/* line 77, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra {
   position: absolute;
-  top: 290px;
+  bottom: 10px;
   right: 10px;
   width: 40px;
   height: 40px;
@@ -201,12 +202,12 @@
   font-size: 200%;
   font-weight: 400;
 }
-/* line 91, ../__compass/sass/_content.sass */
+/* line 92, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra:hover {
   color: white;
   background: red;
 }
-/* line 94, ../__compass/sass/_content.sass */
+/* line 95, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img {
   overflow: hidden;
   width: 99%;
@@ -214,13 +215,42 @@
   margin: 10px 0;
   padding: 0;
   margin-right: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 /* line 102, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img img {
   width: 100%;
   margin: 0;
   padding: 0;
+  border-radius: 5px;
+}
+/* line 107, ../__compass/sass/_content.sass */
+#content #wrapper #detail {
+  position: relative;
+  width: 100%;
+  padding: 30px 0px;
+  color: black;
+  text-align: left;
+  font-size: 80%;
+  line-height: 25px;
+}
+/* line 115, ../__compass/sass/_content.sass */
+#content #wrapper #detail img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+/* line 119, ../__compass/sass/_content.sass */
+#content #wrapper #detail h6 {
+  display: block;
+  width: auto;
+  font-weight: 800;
+  height: auto;
+  background: #00c8c8;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 /* line 1, ../__compass/sass/_footer.sass */
@@ -428,7 +458,139 @@ a[href^="http://maps.google.com/maps"] {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 24, ../__compass/sass/global.sass */
+/* line 2, ../__compass/sass/_form.sass */
+#wrapper h1 {
+  margin-bottom: 50px;
+}
+/* line 4, ../__compass/sass/_form.sass */
+#wrapper h1 #small {
+  font-size: 50%;
+  font-weight: 200;
+  margin-left: 50px;
+}
+/* line 8, ../__compass/sass/_form.sass */
+#wrapper h1 #small b {
+  color: #00c8c8;
+}
+/* line 10, ../__compass/sass/_form.sass */
+#wrapper #formcon {
+  text-align: left;
+  color: black;
+  -ms-input-placeholder-color: rgba(0, 0, 0, 0.8);
+}
+/* line 13, ../__compass/sass/_form.sass */
+#wrapper #formcon ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 15, ../__compass/sass/_form.sass */
+#wrapper #formcon ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 19, ../__compass/sass/_form.sass */
+#wrapper #formcon input:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 21, ../__compass/sass/_form.sass */
+#wrapper #formcon form {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 23, ../__compass/sass/_form.sass */
+#wrapper #formcon form b {
+  color: #00c8c8;
+}
+/* line 25, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=text],
+#wrapper #formcon form input[type=email],
+#wrapper #formcon form input {
+  background: rgba(0, 0, 0, 0.3);
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 65%;
+  color: black;
+  font-weight: 200;
+  margin-bottom: 20px;
+  width: 30%;
+}
+/* line 37, ../__compass/sass/_form.sass */
+#wrapper #formcon form textarea {
+  width: 60%;
+  float: left;
+  margin-right: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 65%;
+  color: black;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+/* line 49, ../__compass/sass/_form.sass */
+#wrapper #formcon form #check {
+  display: none;
+}
+/* line 51, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=submit] {
+  margin-right: 20px;
+  background: #00c8c8;
+  color: black;
+}
+/* line 55, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=reset] {
+  width: 15%;
+  float: left;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+/* line 61, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=reset]:hover {
+  background: red;
+  color: white;
+}
+/* line 64, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=submit] {
+  width: 15%;
+  float: left;
+  margin-top: 10px;
+  background: #00c8c8;
+  color: white;
+}
+/* line 70, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=submit]:hover {
+  background: red;
+}
+/* line 72, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=text],
+#wrapper #formcon form input[type=email],
+#wrapper #formcon form input[type=submit],
+#wrapper #formcon form input[type=reset],
+#wrapper #formcon form textarea {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  border: 1px solid transparent;
+}
+/* line 83, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=text]:focus,
+#wrapper #formcon form input[type=email]:focus,
+#wrapper #formcon form input[type=submit]:focus,
+#wrapper #formcon form input[type=reset]:focus,
+#wrapper #formcon form textarea:focus {
+  box-shadow: 0 0 3px #00c8c8;
+  border: 1px solid #00c8c8;
+}
+
+/* line 23, ../__compass/sass/global.sass */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 29, ../__compass/sass/global.sass */
 html {
   height: 100%;
   margin: 0;
@@ -437,7 +599,7 @@ html {
   font-size: 1.5em;
 }
 
-/* line 31, ../__compass/sass/global.sass */
+/* line 36, ../__compass/sass/global.sass */
 body {
   height: 100%;
   width: 100%;
