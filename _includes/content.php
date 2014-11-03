@@ -3,12 +3,12 @@
 
 	<!-- SELECTORS -->
 	<div id="data_cont">
-
+		<?php include '_includes/facts.php' ?>
 	</div>
 	<div id="find_cont">
 		<div id="postcode">
 			<form name="search" id="clear" method="post" action="<?=$PHP_SELF?>">
-				<input type="submit" id="clear" name="go" value="Alles" />
+				<input type="submit" id="clear" name="go" value="Alle" />
 				<!-- <label>Toon alle zaken</label> -->
 			</form>
  			<form name="search" id="search" method="post" action="<?=$PHP_SELF?>">

@@ -3,12 +3,12 @@
 
 	<!-- SELECTORS -->
 	<div id="data_cont">
-
+		<?php include '_includes/facts.php' ?>
 	</div>
 	<div id="find_cont">
 		<div id="postcode">
 			<form name="search" id="clear" method="post" action="index.php">
-				<input type="submit" id="clear" name="go" value="Alles" />
+				<input type="submit" id="clear" name="go" value="Alle" />
 				<!-- <label>Toon alle zaken</label> -->
 			</form>
 			<form name="search" id="search" method="post" action="index.php">
@@ -38,7 +38,7 @@
 		 		<textarea name="message" id="message" rows="10" cols="60" required="Message" placeholder="Bericht"></textarea>
 				<input type="text" name="naam" id="naam" required="Name" placeholder="Naam"/> <b>*</b><br />
 				<input type="text" name="adres" id="adres" placeholder="Adress" required="Adress"/> <b>*</b><br />
-				<input type="email" placeholder="Email adres" pattern="[^ @]*@[^ @]*" name="email" id="email" required="E-mail"/> <b>*</b><br />
+				<input type="email" placeholder="Email adres" pattern="[^ @]*@[^ @]*.*" name="email" id="email" required="E-mail"/> <b>*</b><br />
 				<input type="submit" name="send" value="verzenden" class="submit-button" onmouseover="this.className='btn btnsubmit'" onmouseout="this.className='submit-button'" />
 				<input type="reset" name="clear" value="wis formulier" class="clear-button"  onmouseover="this.className='btn btnclear'" onmouseout="this.className='clear-button'" >
 				<input id="check" type="text" name="url" value="" placeholder="leave empty">
