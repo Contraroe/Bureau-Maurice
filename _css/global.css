@@ -513,6 +513,18 @@ a[href^="http://maps.google.com/maps"] {
   width: 30%;
 }
 /* line 37, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=text]:valid,
+#wrapper #formcon form input[type=email]:valid,
+#wrapper #formcon form input:valid {
+  background: rgba(0, 200, 200, 0.3);
+}
+/* line 39, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=text]:invalid,
+#wrapper #formcon form input[type=email]:invalid,
+#wrapper #formcon form input:invalid {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 41, ../__compass/sass/_form.sass */
 #wrapper #formcon form textarea {
   width: 60%;
   float: left;
@@ -526,17 +538,29 @@ a[href^="http://maps.google.com/maps"] {
   font-weight: 200;
   margin-bottom: 10px;
 }
-/* line 49, ../__compass/sass/_form.sass */
+/* line 53, ../__compass/sass/_form.sass */
+#wrapper #formcon form textarea:valid {
+  background: rgba(0, 200, 200, 0.3);
+}
+/* line 55, ../__compass/sass/_form.sass */
+#wrapper #formcon form textarea:invalid {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 58, ../__compass/sass/_form.sass */
 #wrapper #formcon form #check {
   display: none;
 }
-/* line 51, ../__compass/sass/_form.sass */
+/* line 60, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit] {
   margin-right: 20px;
   background: #00c8c8;
   color: black;
 }
-/* line 55, ../__compass/sass/_form.sass */
+/* line 64, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=submit]:valid {
+  background: rgba(0, 200, 200, 0.8);
+}
+/* line 66, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=reset] {
   width: 15%;
   float: left;
@@ -544,12 +568,12 @@ a[href^="http://maps.google.com/maps"] {
   background: rgba(0, 0, 0, 0.1);
   color: black;
 }
-/* line 61, ../__compass/sass/_form.sass */
+/* line 72, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=reset]:hover {
   background: red;
   color: white;
 }
-/* line 64, ../__compass/sass/_form.sass */
+/* line 75, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit] {
   width: 15%;
   float: left;
@@ -557,11 +581,11 @@ a[href^="http://maps.google.com/maps"] {
   background: #00c8c8;
   color: white;
 }
-/* line 70, ../__compass/sass/_form.sass */
+/* line 81, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit]:hover {
   background: red;
 }
-/* line 72, ../__compass/sass/_form.sass */
+/* line 83, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text],
 #wrapper #formcon form input[type=email],
 #wrapper #formcon form input[type=submit],
@@ -574,7 +598,7 @@ a[href^="http://maps.google.com/maps"] {
   outline: none;
   border: 1px solid transparent;
 }
-/* line 83, ../__compass/sass/_form.sass */
+/* line 94, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text]:focus,
 #wrapper #formcon form input[type=email]:focus,
 #wrapper #formcon form input[type=submit]:focus,

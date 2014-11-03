@@ -34,6 +34,10 @@
 				font-weight: 200
 				margin-bottom: 20px
 				width: 30%
+				&:valid
+					background: $turk_3
+				&:invalid
+					background: $zwart_1
 			textarea
 				width: 60%
 				float: left
@@ -46,12 +50,19 @@
 				color: $zwart_10
 				font-weight: 200
 				margin-bottom: 10px
+				&:valid
+					background: $turk_3
+				&:invalid
+					background: $zwart_1
+
 			#check
 				display: none
 			input[type=submit]
 				margin-right: 20px
 				background: $turk_10
 				color: $zwart_10
+				&:valid
+					background: $turk_8
 			input[type=reset]
 				width: 15%
 				float: left

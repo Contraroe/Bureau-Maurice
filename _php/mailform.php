@@ -7,7 +7,7 @@ $adres = stripslashes($_POST['adres'])."\r\n";
 $check = stripslashes($_POST['check'])."\r\n"; // must be empty
 
 $subject = "Bureau-Maurice online!";
-$host = "pieter.denorre@telenet.be";
+$host = "pieter.denorre@lannooprint.be";
 
 $body = <<<EOD
 
