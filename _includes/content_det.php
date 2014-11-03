@@ -7,11 +7,11 @@
 	</div>
 	<div id="find_cont">
 		<div id="postcode">
-			<form name="search" id="clear" method="post" action="<?=$PHP_SELF?>">
+			<form name="search" id="clear" method="post" action="index.php">
 				<input type="submit" id="clear" name="go" value="Alles" />
 				<!-- <label>Toon alle zaken</label> -->
 			</form>
- 			<form name="search" id="search" method="post" action="<?=$PHP_SELF?>">
+ 			<form name="search" id="search" method="post" action="index.php">
 		<!-- 		 <select name="pricerange" size="1" id="pricerange">
 					<option value="">Alle Prijzen</option>
 					<option value="1">&lt; 25.000 &euro; </option>
@@ -31,6 +31,6 @@
 	</div>	
 	
 
-	<?php include '_php/search.php' ?>
+	<?php include '_php/search_det.php' ?>
 </div>
 

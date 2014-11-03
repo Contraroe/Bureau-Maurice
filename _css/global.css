@@ -120,32 +120,38 @@
 }
 /* line 22, ../__compass/sass/_content.sass */
 #content #wrapper #frituren.no {
-  width: 100%;
+  width: 974px;
   height: auto;
-  color: white;
+  color: black;
   margin: 0;
   padding: 20px 0px;
   border-radius: 10px;
   font-family: "Alegreya Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 130%;
   text-align: center;
-  background: rgba(255, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-  border: 0px;
+  border: 2px solid red;
 }
 /* line 36, ../__compass/sass/_content.sass */
+#content #wrapper #frituren.no b {
+  font-weight: 800;
+  color: red;
+}
+/* line 39, ../__compass/sass/_content.sass */
 #content #wrapper #frituren {
   color: black;
   height: auto;
   overflow: hidden;
   padding: 0px 0px;
   width: 30%;
-  margin-right: 3.33%;
+  margin-right: 1.6%;
+  margin-left: 1.6%;
   margin-top: 10px;
   float: left;
 }
-/* line 45, ../__compass/sass/_content.sass */
+/* line 49, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info {
   position: relative;
   text-align: left;
@@ -158,7 +164,7 @@
   font-weight: 100;
   padding: 20px 0;
 }
-/* line 56, ../__compass/sass/_content.sass */
+/* line 60, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h2 {
   height: auto;
   display: block;
@@ -166,7 +172,7 @@
   font-size: 200%;
   margin-top: 10px;
 }
-/* line 62, ../__compass/sass/_content.sass */
+/* line 66, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h6 {
   display: block;
   width: auto;
@@ -178,7 +184,7 @@
   margin-bottom: 10px;
   border-radius: 2px;
 }
-/* line 72, ../__compass/sass/_content.sass */
+/* line 76, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra {
   position: absolute;
   top: 290px;
@@ -195,12 +201,12 @@
   font-size: 200%;
   font-weight: 400;
 }
-/* line 87, ../__compass/sass/_content.sass */
+/* line 91, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra:hover {
   color: white;
   background: red;
 }
-/* line 90, ../__compass/sass/_content.sass */
+/* line 94, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img {
   overflow: hidden;
   width: 99%;
@@ -210,7 +216,7 @@
   margin-right: 50px;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 98, ../__compass/sass/_content.sass */
+/* line 102, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img img {
   width: 100%;
   margin: 0;
@@ -306,10 +312,10 @@ a[href^="http://maps.google.com/maps"] {
 #content #find_cont #search #clear #find,
 #content #data_cont #clear #search #find,
 #content #data_cont #search #clear #find,
-#content #find_cont #clear #search select,
-#content #find_cont #search #clear select,
-#content #data_cont #clear #search select,
-#content #data_cont #search #clear select {
+#content #find_cont #clear #search #pricerange,
+#content #find_cont #search #clear #pricerange,
+#content #data_cont #clear #search #pricerange,
+#content #data_cont #search #clear #pricerange {
   height: 20px;
   padding: 5px;
   border: 0;
@@ -321,10 +327,10 @@ a[href^="http://maps.google.com/maps"] {
 }
 /* line 29, ../__compass/sass/_searchbar.sass */
 #content #find_cont #clear label, #content #data_cont #clear label, #content #find_cont #clear #search input, #content #find_cont #search #clear input, #content #data_cont #clear #search input, #content #data_cont #search #clear input, #content #find_cont #clear #search #find, #content #find_cont #search #clear #find, #content #data_cont #clear #search #find, #content #data_cont #search #clear #find,
-#content #find_cont #clear #search select,
-#content #find_cont #search #clear select,
-#content #data_cont #clear #search select,
-#content #data_cont #search #clear select {
+#content #find_cont #clear #search #pricerange,
+#content #find_cont #search #clear #pricerange,
+#content #data_cont #clear #search #pricerange,
+#content #data_cont #search #clear #pricerange {
   background: none;
   font-size: 60%;
   color: rgba(255, 255, 255, 0.3);
@@ -361,12 +367,15 @@ a[href^="http://maps.google.com/maps"] {
 }
 /* line 56, ../__compass/sass/_searchbar.sass */
 #content #find_cont #search, #content #data_cont #search {
+  position: relative;
   padding-left: 5px;
+  width: 600px;
+  float: right;
 }
-/* line 58, ../__compass/sass/_searchbar.sass */
+/* line 61, ../__compass/sass/_searchbar.sass */
 #content #find_cont #search label, #content #data_cont #search label, #content #find_cont #search input, #content #data_cont #search input, #content #find_cont #search #find, #content #data_cont #search #find,
-#content #find_cont #search select,
-#content #data_cont #search select {
+#content #find_cont #search #pricerange,
+#content #data_cont #search #pricerange {
   height: 20px;
   padding: 5px;
   border: 0;
@@ -378,10 +387,10 @@ a[href^="http://maps.google.com/maps"] {
   border: 1px solid rgba(255, 255, 255, 0.1);
   margin-right: 10px;
 }
-/* line 71, ../__compass/sass/_searchbar.sass */
+/* line 74, ../__compass/sass/_searchbar.sass */
 #content #find_cont #search #find, #content #data_cont #search #find,
-#content #find_cont #search select,
-#content #data_cont #search select {
+#content #find_cont #search #pricerange,
+#content #data_cont #search #pricerange {
   font-weight: 100;
   color: black;
   width: 200px;
@@ -389,7 +398,7 @@ a[href^="http://maps.google.com/maps"] {
   font-size: 70%;
   background: rgba(255, 255, 255, 0.5);
 }
-/* line 80, ../__compass/sass/_searchbar.sass */
+/* line 83, ../__compass/sass/_searchbar.sass */
 #content #find_cont #search input[type="submit"], #content #data_cont #search input[type="submit"] {
   width: 40px;
   border-radius: 3px;
@@ -399,12 +408,20 @@ a[href^="http://maps.google.com/maps"] {
   height: auto;
   margin-right: 0px;
 }
-/* line 89, ../__compass/sass/_searchbar.sass */
+/* line 92, ../__compass/sass/_searchbar.sass */
 #content #find_cont #search input[type="submit"]:hover, #content #data_cont #search input[type="submit"]:hover {
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
 }
-/* line 93, ../__compass/sass/_searchbar.sass */
+/* line 95, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search #pricerange, #content #data_cont #search #pricerange {
+  position: absolute;
+  height: 32px;
+  right: 275px;
+  width: 212px;
+  border-radius: 0px;
+}
+/* line 102, ../__compass/sass/_searchbar.sass */
 #content #data_cont {
   top: -80px;
   height: 80px;
