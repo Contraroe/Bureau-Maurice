@@ -451,12 +451,6 @@ a[href^="http://maps.google.com/maps"] {
   width: 212px;
   border-radius: 0px;
 }
-/* line 102, ../__compass/sass/_searchbar.sass */
-#content #data_cont {
-  top: -80px;
-  height: 80px;
-  background: rgba(0, 200, 200, 0.3);
-}
 
 /* line 2, ../__compass/sass/_form.sass */
 #wrapper h1 {
@@ -522,13 +516,14 @@ a[href^="http://maps.google.com/maps"] {
 #wrapper #formcon form input[type=text]:invalid,
 #wrapper #formcon form input[type=email]:invalid,
 #wrapper #formcon form input:invalid {
-  background: rgba(255, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
 }
 /* line 41, ../__compass/sass/_form.sass */
 #wrapper #formcon form textarea {
   width: 60%;
   float: left;
   margin-right: 20px;
+  margin-left: 10px;
   background: rgba(0, 0, 0, 0.3);
   border: 0px;
   border-radius: 5px;
@@ -538,29 +533,29 @@ a[href^="http://maps.google.com/maps"] {
   font-weight: 200;
   margin-bottom: 10px;
 }
-/* line 53, ../__compass/sass/_form.sass */
+/* line 54, ../__compass/sass/_form.sass */
 #wrapper #formcon form textarea:valid {
   background: rgba(0, 200, 200, 0.1);
 }
-/* line 55, ../__compass/sass/_form.sass */
+/* line 56, ../__compass/sass/_form.sass */
 #wrapper #formcon form textarea:invalid {
-  background: rgba(255, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
 }
-/* line 58, ../__compass/sass/_form.sass */
+/* line 59, ../__compass/sass/_form.sass */
 #wrapper #formcon form #check {
   display: none;
 }
-/* line 60, ../__compass/sass/_form.sass */
+/* line 61, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit] {
   margin-right: 20px;
   background: #00c8c8;
   color: black;
 }
-/* line 64, ../__compass/sass/_form.sass */
+/* line 65, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit]:valid {
   background: rgba(0, 200, 200, 0.8);
 }
-/* line 66, ../__compass/sass/_form.sass */
+/* line 67, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=reset] {
   width: 15%;
   float: left;
@@ -568,12 +563,12 @@ a[href^="http://maps.google.com/maps"] {
   background: rgba(0, 0, 0, 0.1);
   color: black;
 }
-/* line 72, ../__compass/sass/_form.sass */
+/* line 73, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=reset]:hover {
   background: red;
   color: white;
 }
-/* line 75, ../__compass/sass/_form.sass */
+/* line 76, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit] {
   width: 15%;
   float: left;
@@ -581,11 +576,11 @@ a[href^="http://maps.google.com/maps"] {
   background: #00c8c8;
   color: white;
 }
-/* line 81, ../__compass/sass/_form.sass */
+/* line 82, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit]:hover {
   background: red;
 }
-/* line 83, ../__compass/sass/_form.sass */
+/* line 84, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text],
 #wrapper #formcon form input[type=email],
 #wrapper #formcon form input[type=submit],
@@ -598,7 +593,7 @@ a[href^="http://maps.google.com/maps"] {
   outline: none;
   border: 1px solid transparent;
 }
-/* line 94, ../__compass/sass/_form.sass */
+/* line 95, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text]:focus,
 #wrapper #formcon form input[type=email]:focus,
 #wrapper #formcon form input[type=submit]:focus,
@@ -608,7 +603,14 @@ a[href^="http://maps.google.com/maps"] {
   border: 1px solid #00c8c8;
 }
 
-/* line 1, ../__compass/sass/_facts.sass */
+/* line 2, ../__compass/sass/_facts.sass */
+#content #data_cont {
+  top: -80px;
+  height: 80px;
+  background: rgba(0, 200, 200, 0.3);
+}
+
+/* line 8, ../__compass/sass/_facts.sass */
 #facts {
   text-align: left;
   width: 978px;
@@ -621,7 +623,7 @@ a[href^="http://maps.google.com/maps"] {
   margin-top: 15px;
   padding: 0;
 }
-/* line 13, ../__compass/sass/_facts.sass */
+/* line 20, ../__compass/sass/_facts.sass */
 #facts li {
   display: block;
   float: left;
@@ -629,42 +631,58 @@ a[href^="http://maps.google.com/maps"] {
   width: auto;
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-right: 15px;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 23, ../__compass/sass/_facts.sass */
+/* line 30, ../__compass/sass/_facts.sass */
 #facts li b {
   color: red;
   padding: 0px 0px 0px 10px;
   border-radius: 3px;
   font-size: 120%;
 }
-/* line 29, ../__compass/sass/_facts.sass */
+/* line 36, ../__compass/sass/_facts.sass */
 #facts li.red {
   background: rgba(0, 0, 0, 0.5);
   float: right;
   width: auto;
-  font-weight: 800;
+  font-weight: 100;
   text-align: center;
 }
-/* line 35, ../__compass/sass/_facts.sass */
+/* line 42, ../__compass/sass/_facts.sass */
 #facts li.red b {
   color: white;
-  font-weight: 800;
+  font-weight: 400;
   margin-right: 10px;
 }
-/* line 39, ../__compass/sass/_facts.sass */
+/* line 46, ../__compass/sass/_facts.sass */
 #facts li#img {
   display: block;
-  height: 25px;
-  width: 20px;
+  height: 30px;
+  width: 38px;
   margin-right: 0px;
+  background: black;
+  background-image: url(../_img/ico/mail.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  padding: 0;
+}
+/* line 57, ../__compass/sass/_facts.sass */
+#facts li#img:hover {
   background: red;
   background-image: url(../_img/ico/mail.svg);
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 80%;
   background-position: center;
+  padding: 0;
+}
+/* line 64, ../__compass/sass/_facts.sass */
+#facts li#img a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* line 24, ../__compass/sass/global.sass */

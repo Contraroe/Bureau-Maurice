@@ -1,15 +1,15 @@
 <?php
 
 //online
-// $dbhost="localhost";
-// $dbuser="drukkqf12";
-// $dbpass="w8rsyn0y";
-// $database="drukkqf12_lannooworld2";
-
-//local
-$dbhost="159.253.0.15";
+$dbhost="localhost";
 $dbuser="drukkqf12";
 $dbpass="w8rsyn0y";
-$database="test";
+$database="drukkqf12_lannooworld2";
+
+//local
+// $dbhost="159.253.0.15";
+// $dbuser="drukkqf12";
+// $dbpass="w8rsyn0y";
+// $database="test";
 
 ?>

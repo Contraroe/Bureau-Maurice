@@ -14,6 +14,6 @@
 	<li>Totaal aantal handelzaken : <b><?php echo htmlspecialchars($alle); ?></b></li>
 	<li>Verkocht : <b><?php echo htmlspecialchars($verkocht); ?></b></li>
 	<li>Te koop : <b><?php echo htmlspecialchars($active); ?></b></li>
-	<li id="img"class="red"></li>
-	<li class="red"><b>0489.612.044</b></li>
+	<li id="img"class="red"><a href="contact.php"></a></li>
+	<li class="red"><b>0489 . 612 . 044</b> ( 7 / 7 )</li>
 </ul>
