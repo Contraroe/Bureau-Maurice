@@ -1,5 +1,5 @@
 <div id="wrapper">
-	<h1>Handelszaken</h1>
+	<h1>Overnames</h1>
 	
 	<?php
 		$find = $_POST['find'];
@@ -14,8 +14,8 @@
 		//Now we search for our search term, in the field the user specified
 			$result = mysql_query("	SELECT * 
 							FROM zaken 
-							WHERE active = 1 
-							AND postcode LIKE '%$find%'
+							-- WHERE active = 1 
+							WHERE postcode LIKE '%$find%'
 							OR plaats LIKE '%$find%'
 							ORDER BY prijs ASC
 						");
@@ -37,6 +37,9 @@
 			$f7=html_entity_decode(mysql_result($result,$i,"naam"));
 			$f10=html_entity_decode(mysql_result($result,$i,"foto"));
 			$f11=html_entity_decode(mysql_result($result,$i,"zaak_id"));
+			$f12=html_entity_decode(mysql_result($result,$i,"active"));
+
+			if ($f12 == 0 ){ $f12 = 'verkocht'; } else { $f12 = '' ; }
 
 	?>
 
@@ -53,7 +56,7 @@
 			//Now we search for our search term, in the field the user specified
 			$result = mysql_query("	SELECT * 
 							FROM zaken 
-							WHERE active = 1 
+							-- WHERE active = 1 
 							ORDER BY prijs ASC
 						");
 			$numa=mysql_numrows($result);
@@ -74,6 +77,9 @@
 			$f7=html_entity_decode(mysql_result($result,$i,"naam"));
 			$f10=html_entity_decode(mysql_result($result,$i,"foto"));
 			$f11=html_entity_decode(mysql_result($result,$i,"zaak_id"));
+			$f12=html_entity_decode(mysql_result($result,$i,"active"));
+
+			if ( $f12 == 0 ) { $f12 = 'verkocht'; } else { $f12 = '' ; }
 	?>
 
 	<!-- Dbase Content Layout -->

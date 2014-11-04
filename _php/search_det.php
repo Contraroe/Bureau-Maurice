@@ -14,8 +14,8 @@
 		//Now we search for our search term, in the field the user specified
 			$result = mysql_query("	SELECT * 
 							FROM zaken 
-							WHERE active = 1 
-							AND zaak_id = '$id'
+							-- WHERE active = 1 
+							WHERE zaak_id = '$id'
 						");
 
 			$f1=html_entity_decode(mysql_result($result,$i,"plaats"));
@@ -27,14 +27,18 @@
 			$f7=html_entity_decode(mysql_result($result,$i,"info"));
 			$f8=html_entity_decode(mysql_result($result,$i,"naam"));
 			$f10=html_entity_decode(mysql_result($result,$i,"foto"));
-	?>
+			$f12=html_entity_decode(mysql_result($result,$i,"active"));
+
+			if ($f12 == 0 ){ $f12 = 'verkocht'; } else { $f12 = '' ; }
+	?>		
 
 	<!-- Dbase Content Layout -->
 	<h1><?php echo htmlspecialchars($f8);?></h1>
 
 	<div id="detail">
 		<div id="img">
-				<img src="_img/zaken/<?php echo htmlspecialchars($f10);?>" alt="<?php echo htmlspecialchars($f10); ?>">
+			<div class="<?php echo htmlspecialchars($f12);?>"><?php echo htmlspecialchars($f12);?></div>
+			<img src="_img/zaken/<?php echo htmlspecialchars($f10);?>" alt="<?php echo htmlspecialchars($f10); ?>">
 		</div>
 		<h6>Omschrijving</h6>
 		<?php echo htmlspecialchars($f7); ?>
