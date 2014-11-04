@@ -1,0 +1,267 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:200,400,600,800);
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  background-color: rgba(51, 51, 51, 0.5);
+  color: white;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 15px;
+  width: 100%;
+  padding-top: 90px; }
+
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+#header_bc {
+  position: fixed;
+  background-color: #333333;
+  height: 35px;
+  padding: 1%;
+  width: 98%;
+  z-index: 5;
+  top: 0;
+  margin-right: 15px; }
+  #header_bc h1 {
+    float: left;
+    line-height: 35px;
+    color: #7dc6b1;
+    font-size: 20px;
+    font-weight: 800; }
+    #header_bc h1 span {
+      color: white;
+      font-weight: 400;
+      font-size: 15px; }
+  #header_bc ul {
+    text-align: center;
+    float: right; }
+  #header_bc ul li {
+    display: block;
+    float: left;
+    height: 35px;
+    padding: 0 15px 0 15px;
+    line-height: 35px;
+    cursor: pointer;
+    font-weight: 400; }
+    #header_bc ul li:hover {
+      background-color: #7dc6b1;
+      color: #333333;
+      box-shadow: inset 1px 1px 5px #333333;
+      border-radius: 5px; }
+  #header_bc ul li.active {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #7dc6b1;
+    box-shadow: inset 1px 1px 5px #333333;
+    border-radius: 5px; }
+
+#testimonials_bc {
+  position: absolute;
+  width: 50%;
+  float: left;
+  right: 0;
+  height: 100%; }
+  #testimonials_bc h1 {
+    display: block;
+    width: 96%;
+    padding: 3% 2% 3% 2%;
+    margin-bottom: 10px;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    cursor: pointer; }
+    #testimonials_bc h1 span {
+      color: #7dc6b1; }
+  #testimonials_bc #testimonials {
+    background-color: rgba(51, 51, 51, 0.4);
+    min-height: 35px;
+    width: 200px;
+    margin: 10px 5px 5px 15px;
+    float: left; }
+    #testimonials_bc #testimonials #id {
+      display: block;
+      width: 170px;
+      padding: 15px;
+      text-align: left;
+      height: 100%;
+      background-color: rgba(51, 51, 51, 0.5);
+      float: clear;
+      margin-right: 2%;
+      text-transform: none; }
+    #testimonials_bc #testimonials #id.live {
+      background-color: #7dc6b1; }
+    #testimonials_bc #testimonials #functie {
+      width: 170px;
+      padding: 15px;
+      text-align: left;
+      height: 100%;
+      background-color: #333333;
+      margin-right: 2%;
+      float: clear;
+      color: #7dc6b1;
+      font-weight: 600; }
+    #testimonials_bc #testimonials #spec {
+      width: 170px;
+      padding: 15px;
+      text-align: left;
+      height: 100%;
+      background-color: rgba(51, 51, 51, 0.4); }
+    #testimonials_bc #testimonials #txt {
+      padding: 15px;
+      text-transform: none;
+      line-height: 20px;
+      min-height: 160px; }
+
+#state {
+  height: 20px;
+  width: 20px;
+  float: right;
+  background-color: rgba(51, 51, 51, 0.4);
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 5px; }
+  #state a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%; }
+  #state:hover {
+    background-color: #333333; }
+
+#delete {
+  height: 20px;
+  width: 20px;
+  float: right;
+  background-color: rgba(51, 51, 51, 0.4);
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px; }
+  #delete a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%; }
+  #delete:hover {
+    background-color: #333333; }
+
+#vacs_bc {
+  position: absolute;
+  width: 50%;
+  float: left;
+  left: 0; }
+  #vacs_bc h1 {
+    display: block;
+    width: 96%;
+    padding: 3% 2% 3% 2%;
+    margin-bottom: 10px;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white; }
+    #vacs_bc h1 span {
+      color: #7dc6b1; }
+  #vacs_bc #vacatures {
+    background-color: rgba(51, 51, 51, 0.4);
+    min-height: 35px;
+    width: 200px;
+    margin: 10px 5px 5px 15px;
+    float: left; }
+    #vacs_bc #vacatures #id {
+      display: block;
+      width: 170px;
+      text-align: left;
+      height: 100%;
+      background-color: rgba(51, 51, 51, 0.5);
+      padding: 15px;
+      float: clear;
+      margin-right: 2%;
+      text-transform: none; }
+    #vacs_bc #vacatures #id.live {
+      background-color: #7dc6b1; }
+    #vacs_bc #vacatures #functie {
+      width: 170px;
+      text-align: left;
+      height: 100%;
+      background-color: #333333;
+      padding: 15px;
+      margin-right: 2%;
+      float: clear;
+      color: #7dc6b1;
+      font-weight: 600; }
+    #vacs_bc #vacatures #spec {
+      width: 170px;
+      text-align: left;
+      height: 100%;
+      background-color: rgba(51, 51, 51, 0.4);
+      padding: 15px; }
+    #vacs_bc #vacatures #txt {
+      padding: 15px;
+      text-transform: none;
+      line-height: 20px;
+      min-height: 370px; }
+
+#testimonials_create {
+  position: absolute;
+  width: 50%;
+  float: left;
+  right: -50%; }
+  #testimonials_create h1 {
+    display: block;
+    width: 96%;
+    padding: 3% 2% 3% 2%;
+    margin-bottom: 10px;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    cursor: pointer; }
+    #testimonials_create h1 span {
+      color: #7dc6b1; }
+  #testimonials_create form {
+    padding: 10%; }
+
+#vacatures_create {
+  position: absolute;
+  width: 50%;
+  float: left;
+  left: -50%; }
+  #vacatures_create h1 {
+    display: block;
+    width: 96%;
+    padding: 3% 2% 3% 2%;
+    margin-bottom: 10px;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    cursor: pointer; }
+    #vacatures_create h1 span {
+      color: #7dc6b1; }
+  #vacatures_create form {
+    padding: 10%; }
+
+form label {
+  width: 100%;
+  font-weight: 800;
+  float: left;
+  margin-top: 20px; }
+form label.live {
+  width: 10%; }
+form input {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px; }
+form input.check {
+  width: 10%;
+  margin-top: 20px;
+  float: clear; }
+form input.btn {
+  width: 20%; }
+form textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px; }
+
+/*# sourceMappingURL=admin.css.map */
