@@ -1,10 +1,10 @@
 <?php 
 	//Now we search for our search term, in the field the user specified
-	$result_actief = mysql_query("SELECT * FROM zaken WHERE active = 1");
+	$result_actief = mysql_query("SELECT * FROM zaken WHERE status = 1");
 	$active = mysql_num_rows($result_actief);
-	$result_verkocht = mysql_query("SELECT * FROM zaken WHERE active = 0");
+	$result_verkocht = mysql_query("SELECT * FROM zaken WHERE status = 0");
 	$verkocht = mysql_num_rows($result_verkocht);
-	$all = mysql_query("SELECT * FROM zaken WHERE active <= 1");
+	$all = mysql_query("SELECT * FROM zaken WHERE status <= 1");
 	$alle = mysql_num_rows($all);
 ?>
 
