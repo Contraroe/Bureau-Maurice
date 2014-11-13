@@ -11,7 +11,7 @@ $subject = "Bureau-Maurice online!";
 $host = "pieter.denorre@lannooprint.be";
 
 $body = <<<EOD
-Referentie: $name
+$ref\r\n\r\n
 $message\r\n
 Name: $name
 Email: $email

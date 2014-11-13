@@ -34,7 +34,7 @@
 			$f2=html_entity_decode(mysql_result($result,$i,"regio"));
 			$f3=html_entity_decode(mysql_result($result,$i,"prijs"));
 			$f4=html_entity_decode(mysql_result($result,$i,"huur"));
-			$f5=html_entity_decode(mysql_result($result,$i,"redenen"));
+			$f5=html_entity_decode(mysql_result($result,$i,"reden"));
 			$f6=html_entity_decode(mysql_result($result,$i,"prijs"));
 			$f7=html_entity_decode(mysql_result($result,$i,"cat"));
 			$f10=html_entity_decode(mysql_result($result,$i,"ico"));
@@ -73,7 +73,7 @@
 			$f2=html_entity_decode(mysql_result($result,$i,"regio"));
 			$f3=html_entity_decode(mysql_result($result,$i,"prijs"));
 			$f4=html_entity_decode(mysql_result($result,$i,"huur"));
-			$f5=html_entity_decode(mysql_result($result,$i,"redenen"));
+			$f5=html_entity_decode(mysql_result($result,$i,"reden"));
 			$f6=html_entity_decode(mysql_result($result,$i,"prijs"));
 			$f7=html_entity_decode(mysql_result($result,$i,"cat_id"));
 
