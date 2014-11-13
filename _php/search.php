@@ -3,6 +3,7 @@
 	
 	<?php
 		$find = $_POST['find'];
+		mysql_query("SET NAMES 'utf8'");
 	?>
 
 
@@ -13,11 +14,13 @@
 
 		//Now we search for our search term, in the field the user specified
 			$result = mysql_query("	SELECT * 
-							FROM zaken 
-							WHERE postcode LIKE '%$find%'
-							OR plaats LIKE '%$find%'
-							ORDER BY prijs ASC
-						");
+							FROM zaken
+							LEFT JOIN category 
+							ON zaken.cat_id = category.cat_id
+							WHERE locatie LIKE '%$find%'
+							OR regio LIKE '%$find%'
+							OR cat LIKE '%$find%'
+							");
 			$numa=mysql_numrows($result);
 			mysql_close();
 			if (!empty($numa)) {
@@ -27,18 +30,18 @@
 	<?php
 		$i=0;
 		while ($i < $numa) {
-			$f1=html_entity_decode(mysql_result($result,$i,"plaats"));
-			$f2=html_entity_decode(mysql_result($result,$i,"postcode"));
-			$f3=html_entity_decode(mysql_result($result,$i,"straat"));
-			$f4=html_entity_decode(mysql_result($result,$i,"nr"));
-			$f5=html_entity_decode(mysql_result($result,$i,"bus"));
+			$f1=html_entity_decode(mysql_result($result,$i,"info"));
+			$f2=html_entity_decode(mysql_result($result,$i,"regio"));
+			$f3=html_entity_decode(mysql_result($result,$i,"prijs"));
+			$f4=html_entity_decode(mysql_result($result,$i,"huur"));
+			$f5=html_entity_decode(mysql_result($result,$i,"redenen"));
 			$f6=html_entity_decode(mysql_result($result,$i,"prijs"));
-			$f7=html_entity_decode(mysql_result($result,$i,"naam"));
-			$f10=html_entity_decode(mysql_result($result,$i,"foto"));
+			$f7=html_entity_decode(mysql_result($result,$i,"cat"));
+			$f10=html_entity_decode(mysql_result($result,$i,"ico"));
 			$f11=html_entity_decode(mysql_result($result,$i,"zaak_id"));
-			$f12=html_entity_decode(mysql_result($result,$i,"active"));
+			$f12=html_entity_decode(mysql_result($result,$i,"status"));
 
-			if ($f12 == 0 ){ $f12 = 'verkocht'; } else { $f12 = '' ; }
+			if ( $f12 == 0 ) { $f12 = 'verkocht'; } else { $f12 = '' ; }
 
 	?>
 
@@ -54,7 +57,7 @@
 	} else { 
 			//Now we search for our search term, in the field the user specified
 			$result = mysql_query("	SELECT * 
-							FROM zaken 
+							FROM zaken
 							ORDER BY prijs ASC
 						");
 			$numa=mysql_numrows($result);

@@ -106,8 +106,9 @@
   height: auto;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 400;
+  padding-bottom: 20px;
 }
-/* line 13, ../__compass/sass/_content.sass */
+/* line 14, ../__compass/sass/_content.sass */
 #content #wrapper h1 {
   text-align: left;
   color: black;
@@ -118,7 +119,12 @@
   border-bottom: 1px solid black;
   margin-top: 100px;
 }
-/* line 22, ../__compass/sass/_content.sass */
+/* line 23, ../__compass/sass/_content.sass */
+#content #wrapper h1 i {
+  font-size: 50%;
+  font-weight: 100;
+}
+/* line 26, ../__compass/sass/_content.sass */
 #content #wrapper #frituren.no {
   width: 974px;
   height: auto;
@@ -134,12 +140,12 @@
   margin-top: 50px;
   border: 2px solid red;
 }
-/* line 36, ../__compass/sass/_content.sass */
+/* line 40, ../__compass/sass/_content.sass */
 #content #wrapper #frituren.no b {
   font-weight: 800;
   color: red;
 }
-/* line 39, ../__compass/sass/_content.sass */
+/* line 43, ../__compass/sass/_content.sass */
 #content #wrapper #frituren {
   color: black;
   height: auto;
@@ -151,7 +157,7 @@
   margin-top: 10px;
   float: left;
 }
-/* line 49, ../__compass/sass/_content.sass */
+/* line 53, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info {
   position: relative;
   text-align: left;
@@ -163,8 +169,18 @@
   border-radius: 20px;
   font-weight: 100;
   padding: 20px 0;
+  font-weight: 100;
 }
-/* line 60, ../__compass/sass/_content.sass */
+/* line 65, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info #text {
+  display: block;
+  height: 80px;
+  font-weight: 100;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 72, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h2 {
   height: auto;
   display: block;
@@ -172,11 +188,11 @@
   font-size: 200%;
   margin-top: 10px;
 }
-/* line 66, ../__compass/sass/_content.sass */
+/* line 78, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h6 {
   display: block;
   width: auto;
-  font-weight: 800;
+  font-weight: 400;
   height: auto;
   background: black;
   color: white;
@@ -185,7 +201,7 @@
   border-radius: 2px;
   border-radius: 5px;
 }
-/* line 77, ../__compass/sass/_content.sass */
+/* line 89, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra {
   position: absolute;
   bottom: 10px;
@@ -202,12 +218,12 @@
   font-size: 200%;
   font-weight: 400;
 }
-/* line 92, ../__compass/sass/_content.sass */
+/* line 104, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra:hover {
   color: white;
   background: red;
 }
-/* line 95, ../__compass/sass/_content.sass */
+/* line 107, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img {
   overflow: hidden;
   width: 100%;
@@ -216,14 +232,14 @@
   padding: 0;
   margin-right: 50px;
 }
-/* line 102, ../__compass/sass/_content.sass */
+/* line 114, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img img {
   width: 100%;
   margin: 0;
   padding: 0;
   border-radius: 5px;
 }
-/* line 107, ../__compass/sass/_content.sass */
+/* line 119, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img .verkocht {
   position: absolute;
   width: auto;
@@ -236,36 +252,29 @@
   right: 0;
   border-bottom-left-radius: 5px;
 }
-/* line 119, ../__compass/sass/_content.sass */
+/* line 131, ../__compass/sass/_content.sass */
 #content #wrapper #detail {
   position: relative;
   width: 100%;
-  padding: 30px 0px;
   color: black;
   text-align: left;
-  font-size: 80%;
-  line-height: 25px;
+  font-size: 60%;
+  line-height: 20px;
 }
-/* line 127, ../__compass/sass/_content.sass */
+/* line 138, ../__compass/sass/_content.sass */
 #content #wrapper #detail img {
-  width: 100%;
+  width: 50%;
   border-radius: 5px;
   margin-bottom: 10px;
+  float: right;
+  margin-left: 5%;
 }
-/* line 131, ../__compass/sass/_content.sass */
+/* line 144, ../__compass/sass/_content.sass */
 #content #wrapper #detail h6 {
-  display: block;
-  width: auto;
-  font-weight: 800;
-  height: auto;
-  background: #00c8c8;
-  color: white;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 15px;
+  font-size: 120%;
 }
-/* line 142, ../__compass/sass/_content.sass */
+/* line 147, ../__compass/sass/_content.sass */
 #content #wrapper #detail .verkocht {
   position: absolute;
   width: auto;
@@ -277,6 +286,19 @@
   font-size: 130%;
   right: 0;
   border-bottom-left-radius: 5px;
+}
+/* line 158, ../__compass/sass/_content.sass */
+#content #wrapper #detail #mailref {
+  padding: 10px 20px;
+  background: #00c8c8;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+/* line 165, ../__compass/sass/_content.sass */
+#content #wrapper #detail #mailref:hover {
+  background: red;
 }
 
 /* line 1, ../__compass/sass/_footer.sass */
@@ -569,21 +591,32 @@ a[href^="http://maps.google.com/maps"] {
 #wrapper #formcon form textarea:invalid {
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 61, ../__compass/sass/_form.sass */
+/* line 60, ../__compass/sass/_form.sass */
+#wrapper #formcon form #ref {
+  width: 90%;
+  background: transparent;
+  padding-left: 20px;
+}
+/* line 64, ../__compass/sass/_form.sass */
+#wrapper #formcon form #ref:focus {
+  box-shadow: 0 0 3px transparent;
+  border: 1px solid transparent;
+}
+/* line 67, ../__compass/sass/_form.sass */
 #wrapper #formcon form #check {
   display: none;
 }
-/* line 63, ../__compass/sass/_form.sass */
+/* line 69, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit] {
   margin-right: 20px;
   background: #00c8c8;
   color: black;
 }
-/* line 67, ../__compass/sass/_form.sass */
+/* line 73, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit]:valid {
   background: rgba(0, 200, 200, 0.8);
 }
-/* line 69, ../__compass/sass/_form.sass */
+/* line 75, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=reset] {
   width: 15%;
   float: left;
@@ -591,12 +624,12 @@ a[href^="http://maps.google.com/maps"] {
   background: rgba(0, 0, 0, 0.1);
   color: black;
 }
-/* line 75, ../__compass/sass/_form.sass */
+/* line 81, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=reset]:hover {
   background: red;
   color: white;
 }
-/* line 78, ../__compass/sass/_form.sass */
+/* line 84, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit] {
   width: 15%;
   float: left;
@@ -604,11 +637,11 @@ a[href^="http://maps.google.com/maps"] {
   background: #00c8c8;
   color: white;
 }
-/* line 84, ../__compass/sass/_form.sass */
+/* line 90, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit]:hover {
   background: red;
 }
-/* line 86, ../__compass/sass/_form.sass */
+/* line 92, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text],
 #wrapper #formcon form input[type=email],
 #wrapper #formcon form input[type=submit],
@@ -621,7 +654,7 @@ a[href^="http://maps.google.com/maps"] {
   outline: none;
   border: 1px solid transparent;
 }
-/* line 97, ../__compass/sass/_form.sass */
+/* line 103, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text]:focus,
 #wrapper #formcon form input[type=email]:focus,
 #wrapper #formcon form input[type=submit]:focus,
@@ -629,6 +662,17 @@ a[href^="http://maps.google.com/maps"] {
 #wrapper #formcon form textarea:focus {
   box-shadow: 0 0 3px #00c8c8;
   border: 1px solid #00c8c8;
+}
+/* line 110, ../__compass/sass/_form.sass */
+#wrapper #formcon form label, #wrapper #formcon form #content #find_cont #search input, #content #find_cont #search #wrapper #formcon form input, #wrapper #formcon form #content #data_cont #search input, #content #data_cont #search #wrapper #formcon form input, #wrapper #formcon form #content #find_cont #search #find, #content #find_cont #search #wrapper #formcon form #find, #wrapper #formcon form #content #data_cont #search #find, #content #data_cont #search #wrapper #formcon form #find,
+#wrapper #formcon form #content #find_cont #search #pricerange,
+#content #find_cont #search #wrapper #formcon form #pricerange,
+#wrapper #formcon form #content #data_cont #search #pricerange,
+#content #data_cont #search #wrapper #formcon form #pricerange {
+  font-size: 90%;
+  padding-left: 20px;
+  font-weight: 800;
+  color: #00c8c8;
 }
 
 /* line 2, ../__compass/sass/_facts.sass */

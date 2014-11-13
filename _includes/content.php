@@ -11,7 +11,7 @@
 				<input type="submit" id="clear" name="go" value="Alle" />
 			</form>
  			<form name="search" id="search" method="post" action="<?=$PHP_SELF?>">
-				<input type="text" name="find" id="find" value="Postcode of plaats" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Postcode':this.value;"/>
+				<input type="text" name="find" id="find" value="Plaats of Type" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Postcode':this.value;"/>
 				<input type="submit" id="go" name="go" value="Ga" />
 			</form>
 			
