@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="img/ico/favicon.ico" rel="shortcut icon"/>
 	<link href="../_css/normalize.css" rel="stylesheet" type="text/css" />
-	<link href="css/admin.css" rel="stylesheet" type="text/css" />
+	<link href="_css/admin.css" rel="stylesheet" type="text/css" />
 	
 	<link href="_img/ico/favicon.ico" rel="shortcut icon"/>
 
@@ -21,7 +21,10 @@
 	<script src="http://use.edgefonts.net/comfortaa:n4,n3,n7:all;open-sans:n7,i7,n8,i8,i4,n3,i3,n4,n6,i6:all.js"></script>
 
 </head>
-mhsuwbdmvobhjqsmoduvbh
-			
+</body>
+	<div id="wrapper">
+		<?php include '_php/q_all.php' ?>
+		<?php include '_includes/edit_data.php' ?>
+	</div>
 </body>
 </html>

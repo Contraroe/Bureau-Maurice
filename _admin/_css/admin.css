@@ -1,267 +1,155 @@
-@import url(http://fonts.googleapis.com/css?family=Dosis:200,400,600,800);
+@import url(http://fonts.googleapis.com/css?family=Abel|Cantata+One|Alegreya+Sans:100,200,400,500,800);
+/* line 10, ../__compass/sass/admin.sass */
 html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: 100%; }
+  font-size: 1.5em;
+  font-family: "Alegreya Sans", sans-serif;
+}
 
+/* line 19, ../__compass/sass/admin.sass */
 body {
-  background-color: rgba(51, 51, 51, 0.5);
-  color: white;
-  font-family: "Dosis", sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 15px;
+  height: 100%;
   width: 100%;
-  padding-top: 90px; }
-
-#container {
-  position: absolute;
+  font-size: 100%;
+  color: #FFF;
+  text-align: center;
+  color: black;
+}
+/* line 26, ../__compass/sass/admin.sass */
+body #wrapper {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; }
-
-#header_bc {
-  position: fixed;
-  background-color: #333333;
-  height: 35px;
-  padding: 1%;
-  width: 98%;
-  z-index: 5;
-  top: 0;
-  margin-right: 15px; }
-  #header_bc h1 {
-    float: left;
-    line-height: 35px;
-    color: #7dc6b1;
-    font-size: 20px;
-    font-weight: 800; }
-    #header_bc h1 span {
-      color: white;
-      font-weight: 400;
-      font-size: 15px; }
-  #header_bc ul {
-    text-align: center;
-    float: right; }
-  #header_bc ul li {
-    display: block;
-    float: left;
-    height: 35px;
-    padding: 0 15px 0 15px;
-    line-height: 35px;
-    cursor: pointer;
-    font-weight: 400; }
-    #header_bc ul li:hover {
-      background-color: #7dc6b1;
-      color: #333333;
-      box-shadow: inset 1px 1px 5px #333333;
-      border-radius: 5px; }
-  #header_bc ul li.active {
-    background-color: rgba(51, 51, 51, 0.5);
-    color: #7dc6b1;
-    box-shadow: inset 1px 1px 5px #333333;
-    border-radius: 5px; }
-
-#testimonials_bc {
-  position: absolute;
-  width: 50%;
+}
+/* line 29, ../__compass/sass/admin.sass */
+body #wrapper h1 {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 20px 0px;
+  font-size: 250%;
+  font-weight: 100;
+  text-align: left;
+  margin-top: 50px;
+  color: #00c8c8;
+}
+/* line 39, ../__compass/sass/admin.sass */
+body #wrapper #left_all {
+  width: auto;
+  background: rgba(0, 0, 0, 0.8);
+  height: auto;
+  color: white;
+  font-size: 65%;
+  height: 100%;
+  font-weight: 100;
   float: left;
-  right: 0;
-  height: 100%; }
-  #testimonials_bc h1 {
-    display: block;
-    width: 96%;
-    padding: 3% 2% 3% 2%;
-    margin-bottom: 10px;
-    background-color: rgba(51, 51, 51, 0.5);
-    color: white;
-    cursor: pointer; }
-    #testimonials_bc h1 span {
-      color: #7dc6b1; }
-  #testimonials_bc #testimonials {
-    background-color: rgba(51, 51, 51, 0.4);
-    min-height: 35px;
-    width: 200px;
-    margin: 10px 5px 5px 15px;
-    float: left; }
-    #testimonials_bc #testimonials #id {
-      display: block;
-      width: 170px;
-      padding: 15px;
-      text-align: left;
-      height: 100%;
-      background-color: rgba(51, 51, 51, 0.5);
-      float: clear;
-      margin-right: 2%;
-      text-transform: none; }
-    #testimonials_bc #testimonials #id.live {
-      background-color: #7dc6b1; }
-    #testimonials_bc #testimonials #functie {
-      width: 170px;
-      padding: 15px;
-      text-align: left;
-      height: 100%;
-      background-color: #333333;
-      margin-right: 2%;
-      float: clear;
-      color: #7dc6b1;
-      font-weight: 600; }
-    #testimonials_bc #testimonials #spec {
-      width: 170px;
-      padding: 15px;
-      text-align: left;
-      height: 100%;
-      background-color: rgba(51, 51, 51, 0.4); }
-    #testimonials_bc #testimonials #txt {
-      padding: 15px;
-      text-transform: none;
-      line-height: 20px;
-      min-height: 160px; }
-
-#state {
-  height: 20px;
-  width: 20px;
-  float: right;
-  background-color: rgba(51, 51, 51, 0.4);
-  cursor: pointer;
+  padding: 0 40px;
+}
+/* line 49, ../__compass/sass/admin.sass */
+body #wrapper #left_all table {
+  width: auto;
+  text-align: left;
+}
+/* line 52, ../__compass/sass/admin.sass */
+body #wrapper #left_all table #header {
+  text-decoration: uppercase;
+  font-weight: 400;
+  color: #00c8c8;
+  border-bottom: 1px solid white;
+}
+/* line 57, ../__compass/sass/admin.sass */
+body #wrapper #left_all table #header td {
+  padding: 10px 10px 10px 10px;
+}
+/* line 59, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr {
+  text-decoration: uppercase;
+  font-weight: 100;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 64, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td {
+  padding: 5px 10px 5px 10px;
+}
+/* line 66, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  padding: 1px;
+  background: rgba(0, 200, 200, 0.8);
+  border-radius: 3px;
   text-align: center;
-  line-height: 20px;
-  margin-right: 5px; }
-  #state a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    height: 100%;
-    width: 100%; }
-  #state:hover {
-    background-color: #333333; }
-
-#delete {
-  height: 20px;
-  width: 20px;
-  float: right;
-  background-color: rgba(51, 51, 51, 0.4);
-  cursor: pointer;
+  font-size: 80%;
+  font-weight: 400;
+  box-shadow: 1px 1px 2px black;
+}
+/* line 78, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td a:hover {
+  background: red;
+  box-shadow: inset 1px 1px 2px black;
+}
+/* line 81, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr .active {
+  color: red;
+}
+/* line 83, ../__compass/sass/admin.sass */
+body #wrapper #edit {
+  color: black;
+  background: rgba(0, 0, 0, 0.6);
+  float: left;
+  padding: 0px 40px;
+  height: 100%;
+  font-size: 65%;
+  width: auto;
+}
+/* line 91, ../__compass/sass/admin.sass */
+body #wrapper #edit form {
+  text-align: left;
+  color: white;
+}
+/* line 94, ../__compass/sass/admin.sass */
+body #wrapper #edit form label {
+  display: block;
+  text-decoration: uppercase;
+  font-weight: 400;
+  color: #00c8c8;
+  padding: 10px 0px 0px 0px;
+}
+/* line 100, ../__compass/sass/admin.sass */
+body #wrapper #edit form #submit {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px;
+  background: rgba(0, 200, 200, 0.8);
+  border-radius: 3px;
   text-align: center;
-  line-height: 20px; }
-  #delete a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    height: 100%;
-    width: 100%; }
-  #delete:hover {
-    background-color: #333333; }
-
-#vacs_bc {
-  position: absolute;
-  width: 50%;
+  font-size: 80%;
+  font-weight: 400;
+  box-shadow: 1px 1px 2px black;
+  border: none;
   float: left;
-  left: 0; }
-  #vacs_bc h1 {
-    display: block;
-    width: 96%;
-    padding: 3% 2% 3% 2%;
-    margin-bottom: 10px;
-    background-color: rgba(51, 51, 51, 0.5);
-    color: white; }
-    #vacs_bc h1 span {
-      color: #7dc6b1; }
-  #vacs_bc #vacatures {
-    background-color: rgba(51, 51, 51, 0.4);
-    min-height: 35px;
-    width: 200px;
-    margin: 10px 5px 5px 15px;
-    float: left; }
-    #vacs_bc #vacatures #id {
-      display: block;
-      width: 170px;
-      text-align: left;
-      height: 100%;
-      background-color: rgba(51, 51, 51, 0.5);
-      padding: 15px;
-      float: clear;
-      margin-right: 2%;
-      text-transform: none; }
-    #vacs_bc #vacatures #id.live {
-      background-color: #7dc6b1; }
-    #vacs_bc #vacatures #functie {
-      width: 170px;
-      text-align: left;
-      height: 100%;
-      background-color: #333333;
-      padding: 15px;
-      margin-right: 2%;
-      float: clear;
-      color: #7dc6b1;
-      font-weight: 600; }
-    #vacs_bc #vacatures #spec {
-      width: 170px;
-      text-align: left;
-      height: 100%;
-      background-color: rgba(51, 51, 51, 0.4);
-      padding: 15px; }
-    #vacs_bc #vacatures #txt {
-      padding: 15px;
-      text-transform: none;
-      line-height: 20px;
-      min-height: 370px; }
-
-#testimonials_create {
-  position: absolute;
-  width: 50%;
-  float: left;
-  right: -50%; }
-  #testimonials_create h1 {
-    display: block;
-    width: 96%;
-    padding: 3% 2% 3% 2%;
-    margin-bottom: 10px;
-    background-color: rgba(51, 51, 51, 0.5);
-    color: white;
-    cursor: pointer; }
-    #testimonials_create h1 span {
-      color: #7dc6b1; }
-  #testimonials_create form {
-    padding: 10%; }
-
-#vacatures_create {
-  position: absolute;
-  width: 50%;
-  float: left;
-  left: -50%; }
-  #vacatures_create h1 {
-    display: block;
-    width: 96%;
-    padding: 3% 2% 3% 2%;
-    margin-bottom: 10px;
-    background-color: rgba(51, 51, 51, 0.5);
-    color: white;
-    cursor: pointer; }
-    #vacatures_create h1 span {
-      color: #7dc6b1; }
-  #vacatures_create form {
-    padding: 10%; }
-
-form label {
+  width: 100px;
+}
+/* line 114, ../__compass/sass/admin.sass */
+body #wrapper #edit form #submit:hover {
+  background: red;
+  box-shadow: inset 1px 1px 2px black;
+}
+/* line 117, ../__compass/sass/admin.sass */
+body #wrapper #edit form textarea,
+body #wrapper #edit form input {
   width: 100%;
-  font-weight: 800;
-  float: left;
-  margin-top: 20px; }
-form label.live {
-  width: 10%; }
-form input {
-  width: 100%;
-  height: 20px;
-  margin-top: 10px; }
-form input.check {
-  width: 10%;
-  margin-top: 20px;
-  float: clear; }
-form input.btn {
-  width: 20%; }
-form textarea {
-  width: 100%;
-  height: 150px;
-  margin-top: 10px; }
-
-/*# sourceMappingURL=admin.css.map */
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 100;
+}
