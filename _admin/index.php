@@ -25,6 +25,7 @@
 	<div id="wrapper">
 		<?php include '_php/q_all.php' ?>
 		<?php include '_includes/edit_data.php' ?>
+		<?php include '_includes/add_data.php' ?>
 	</div>
 </body>
 </html>

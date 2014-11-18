@@ -26,6 +26,10 @@ body
 	#wrapper
 		width: 100%
 		height: 100%
+		background-image: url(../../_img/admin_bg.jpg)
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
 		h1
 			display: block
 			width: 100%
@@ -46,6 +50,7 @@ body
 			font-weight: 100
 			float: left
 			padding: 0 40px
+			overflow: scroll
 			table
 				width: auto
 				text-align: left
@@ -82,12 +87,13 @@ body
 						color: $rood_10
 		#edit
 			color: $zwart_10
-			background: $zwart_6
+			background: $zwart_5
 			float: left
-			padding: 0px 40px
+			padding: 0px 40px 0px 30px
 			height: 100%
 			font-size: 65%
 			width: auto
+			overflow: scroll
 			form 
 				text-align: left
 				color: $wit_10
@@ -96,7 +102,7 @@ body
 					text-decoration: uppercase
 					font-weight: 400
 					color: $turk_10
-					padding: 10px 0px 0px 0px
+					padding: 10px 0px 5px 0px
 				#submit
 					text-decoration: none
 					color: $wit_10
@@ -110,12 +116,13 @@ body
 					box-shadow: 1px 1px 2px $zwart_10
 					border: none
 					float: left
-					width: 100px
+					width: 105%
+					margin-bottom: 50px
 					&:hover
 						background: $rood_10
 						box-shadow: inset 1px 1px 2px $zwart_10
 				textarea,
-				input
+				input,
 					width: 100%
 					border-radius: 3px
 					border: none
@@ -124,3 +131,14 @@ body
 					color: $wit_10
 					font-family: $logo
 					font-weight: 100
+				select
+					@extend input
+					width: 105%
+		#add
+			@extend #edit
+			float: right
+			background: $wit_9
+			form
+				input,
+				textarea
+					background: $zwart_4
