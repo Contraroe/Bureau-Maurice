@@ -62,6 +62,9 @@
   font-weight: 400;
   font-size: 110%;
   padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   float: right;
@@ -69,13 +72,13 @@
 /* line 51, ../__compass/sass/_header.sass */
 #header_cont #header ul li#nav:hover {
   color: white;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   font-weight: 400;
 }
 /* line 55, ../__compass/sass/_header.sass */
 #header_cont #header ul .active {
   color: white;
-  background: red;
+  background-color: red;
   font-weight: 400;
 }
 
@@ -84,11 +87,14 @@
   position: relative;
   width: 100%;
   height: 600px;
-  background: rgba(0, 0, 0, 0.5);
-  background-image: url(../_img/bg_2.jpg);
-  background-size: cover;
-  background-position: center top;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../_img/bg_2.jpg");
+  background-position: top;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   z-index: 0;
 }
 
@@ -131,12 +137,15 @@
   color: black;
   margin: 0;
   padding: 20px 0px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
   border-radius: 10px;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 200;
   font-size: 130%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   border: 2px solid red;
 }
@@ -166,21 +175,39 @@
   float: left;
   padding: 0px;
   font-size: 70%;
-  border-radius: 20px;
   font-weight: 100;
   padding: 20px 0;
   font-weight: 100;
 }
-/* line 65, ../__compass/sass/_content.sass */
+/* line 64, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #text {
-  display: block;
-  height: 80px;
-  font-weight: 100;
-  width: 250px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -ms-box;
+  -ms-line-clamp: 2;
+  -ms-box-orient: vertical;
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: 100;
+  margin-bottom: 20px;
+  max-height: 40px;
+  min-height: 40px;
 }
-/* line 72, ../__compass/sass/_content.sass */
+/* line 78, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info #text:after {
+  content: "...";
+  font-weight: 400;
+  position: absolute;
+  bottom: 79px;
+  right: 0;
+  padding: 0 10px 1px 45px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5), white 50%);
+  color: black;
+  border-right: 10px;
+}
+/* line 88, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h2 {
   height: auto;
   display: block;
@@ -188,27 +215,32 @@
   font-size: 200%;
   margin-top: 10px;
 }
-/* line 78, ../__compass/sass/_content.sass */
+/* line 94, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h6 {
   display: block;
   width: auto;
   font-weight: 400;
   height: auto;
-  background: black;
+  background-color: black;
   color: white;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 89, ../__compass/sass/_content.sass */
+/* line 104, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra {
   position: absolute;
   bottom: 10px;
   right: 10px;
   width: 40px;
   height: 40px;
-  background: #00c8c8;
+  background-color: #00c8c8;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
   border-radius: 20px;
   line-height: 40px;
   text-align: center;
@@ -218,12 +250,12 @@
   font-size: 200%;
   font-weight: 400;
 }
-/* line 104, ../__compass/sass/_content.sass */
+/* line 119, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra:hover {
   color: white;
-  background: red;
+  background-color: red;
 }
-/* line 107, ../__compass/sass/_content.sass */
+/* line 122, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img {
   overflow: hidden;
   width: 100%;
@@ -232,27 +264,33 @@
   padding: 0;
   margin-right: 50px;
 }
-/* line 114, ../__compass/sass/_content.sass */
+/* line 129, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img img {
   width: 100%;
   margin: 0;
   padding: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 119, ../__compass/sass/_content.sass */
+/* line 134, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img .verkocht {
   position: absolute;
   width: auto;
   height: auto;
-  background: red;
+  background-color: red;
   color: white;
   font-weight: 400;
   padding: 5px 20px;
   font-size: 130%;
   right: 0;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 131, ../__compass/sass/_content.sass */
+/* line 146, ../__compass/sass/_content.sass */
 #content #wrapper #detail {
   position: relative;
   width: 100%;
@@ -261,44 +299,53 @@
   font-size: 60%;
   line-height: 20px;
 }
-/* line 138, ../__compass/sass/_content.sass */
+/* line 153, ../__compass/sass/_content.sass */
 #content #wrapper #detail img {
   width: 50%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 10px;
   float: right;
   margin-left: 5%;
 }
-/* line 144, ../__compass/sass/_content.sass */
+/* line 159, ../__compass/sass/_content.sass */
 #content #wrapper #detail h6 {
   margin-top: 15px;
   font-size: 120%;
 }
-/* line 147, ../__compass/sass/_content.sass */
+/* line 162, ../__compass/sass/_content.sass */
 #content #wrapper #detail .verkocht {
   position: absolute;
   width: auto;
   height: auto;
-  background: red;
+  background-color: red;
   color: white;
   font-weight: 400;
   padding: 5px 20px;
   font-size: 130%;
   right: 0;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 158, ../__compass/sass/_content.sass */
+/* line 173, ../__compass/sass/_content.sass */
 #content #wrapper #detail #mailref {
   padding: 10px 20px;
-  background: #00c8c8;
+  background-color: #00c8c8;
   color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
   text-align: center;
   width: 100%;
 }
-/* line 165, ../__compass/sass/_content.sass */
+/* line 180, ../__compass/sass/_content.sass */
 #content #wrapper #detail #mailref:hover {
-  background: red;
+  background-color: red;
 }
 
 /* line 1, ../__compass/sass/_footer.sass */
@@ -322,14 +369,14 @@
   width: 100%;
   height: 100%;
   margin-left: 0px;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 /* line 18, ../__compass/sass/_footer.sass */
 #container.map #map #mapcont #gmap_canvas {
   position: relative;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 /* line 25, ../__compass/sass/_footer.sass */
@@ -344,14 +391,14 @@ a[href^="http://maps.google.com/maps"] {
 
 /* line 31, ../__compass/sass/_footer.sass */
 .gmnoprint div {
-  background: none !important;
+  background-color: none !important;
 }
 
 /* line 34, ../__compass/sass/_footer.sass */
 #footer_cont {
   width: 100%;
   height: 60px;
-  background: red;
+  background-color: red;
   margin-top: 100px;
 }
 
@@ -361,7 +408,7 @@ a[href^="http://maps.google.com/maps"] {
   bottom: 0;
   width: 100%;
   height: 30px;
-  background: black;
+  background-color: black;
   top: 0px;
   z-index: 99;
   text-align: right;
@@ -398,8 +445,11 @@ a[href^="http://maps.google.com/maps"] {
   padding: 5px;
   border: 0;
   font-size: 70%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.7);
   font-weight: 100;
 }
@@ -409,7 +459,7 @@ a[href^="http://maps.google.com/maps"] {
 #content #find_cont #search #clear #pricerange,
 #content #data_cont #clear #search #pricerange,
 #content #data_cont #search #clear #pricerange {
-  background: none;
+  background-color: none;
   font-size: 60%;
   color: rgba(255, 255, 255, 0.3);
   margin-left: 5px;
@@ -417,6 +467,9 @@ a[href^="http://maps.google.com/maps"] {
 /* line 34, ../__compass/sass/_searchbar.sass */
 #content #find_cont #clear input[type="submit"], #content #data_cont #clear input[type="submit"] {
   width: 40px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
   border-radius: 3px;
   background-color: red;
   color: white;
@@ -431,6 +484,9 @@ a[href^="http://maps.google.com/maps"] {
 /* line 45, ../__compass/sass/_searchbar.sass */
 #content #find_cont #clear input[type="submit"], #content #data_cont #clear input[type="submit"] {
   width: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
   border-radius: 3px;
   background-color: #00c8c8;
   color: white;
@@ -458,8 +514,11 @@ a[href^="http://maps.google.com/maps"] {
   padding: 5px;
   border: 0;
   font-size: 70%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.7);
   font-weight: 100;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -474,11 +533,14 @@ a[href^="http://maps.google.com/maps"] {
   width: 200px;
   height: 20px;
   font-size: 70%;
-  background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 /* line 83, ../__compass/sass/_searchbar.sass */
 #content #find_cont #search input[type="submit"], #content #data_cont #search input[type="submit"] {
   width: 40px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
   border-radius: 3px;
   background-color: red;
   color: white;
@@ -497,6 +559,9 @@ a[href^="http://maps.google.com/maps"] {
   height: 32px;
   right: 275px;
   width: 212px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
   border-radius: 0px;
 }
 
@@ -544,8 +609,11 @@ a[href^="http://maps.google.com/maps"] {
 #wrapper #formcon form input[type=text],
 #wrapper #formcon form input[type=email],
 #wrapper #formcon form input {
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 65%;
@@ -558,13 +626,13 @@ a[href^="http://maps.google.com/maps"] {
 #wrapper #formcon form input[type=text]:valid,
 #wrapper #formcon form input[type=email]:valid,
 #wrapper #formcon form input:valid {
-  background: rgba(0, 200, 200, 0.1);
+  background-color: rgba(0, 200, 200, 0.1);
 }
 /* line 39, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text]:invalid,
 #wrapper #formcon form input[type=email]:invalid,
 #wrapper #formcon form input:invalid {
-  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /* line 41, ../__compass/sass/_form.sass */
 #wrapper #formcon form textarea {
@@ -574,8 +642,11 @@ a[href^="http://maps.google.com/maps"] {
   float: left;
   margin-right: 20px;
   margin-left: 10px;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 65%;
@@ -585,16 +656,16 @@ a[href^="http://maps.google.com/maps"] {
 }
 /* line 56, ../__compass/sass/_form.sass */
 #wrapper #formcon form textarea:valid {
-  background: rgba(0, 200, 200, 0.1);
+  background-color: rgba(0, 200, 200, 0.1);
 }
 /* line 58, ../__compass/sass/_form.sass */
 #wrapper #formcon form textarea:invalid {
-  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /* line 60, ../__compass/sass/_form.sass */
 #wrapper #formcon form #ref {
   width: 90%;
-  background: transparent;
+  background-color: transparent;
   padding-left: 20px;
 }
 /* line 64, ../__compass/sass/_form.sass */
@@ -609,24 +680,24 @@ a[href^="http://maps.google.com/maps"] {
 /* line 69, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit] {
   margin-right: 20px;
-  background: #00c8c8;
+  background-color: #00c8c8;
   color: black;
 }
 /* line 73, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit]:valid {
-  background: rgba(0, 200, 200, 0.8);
+  background-color: rgba(0, 200, 200, 0.8);
 }
 /* line 75, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=reset] {
   width: 15%;
   float: left;
   margin-top: 10px;
-  background: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   color: black;
 }
 /* line 81, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=reset]:hover {
-  background: red;
+  background-color: red;
   color: white;
 }
 /* line 84, ../__compass/sass/_form.sass */
@@ -634,12 +705,12 @@ a[href^="http://maps.google.com/maps"] {
   width: 15%;
   float: left;
   margin-top: 10px;
-  background: #00c8c8;
+  background-color: #00c8c8;
   color: white;
 }
 /* line 90, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit]:hover {
-  background: red;
+  background-color: red;
 }
 /* line 92, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text],
@@ -679,7 +750,7 @@ a[href^="http://maps.google.com/maps"] {
 #content #data_cont {
   top: -80px;
   height: 80px;
-  background: rgba(0, 200, 200, 0.3);
+  background-color: rgba(0, 200, 200, 0.3);
 }
 
 /* line 8, ../__compass/sass/_facts.sass */
@@ -703,20 +774,26 @@ a[href^="http://maps.google.com/maps"] {
   width: auto;
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
   margin-right: 15px;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /* line 30, ../__compass/sass/_facts.sass */
 #facts li b {
   color: red;
   padding: 0px 0px 0px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
   border-radius: 3px;
   font-size: 120%;
 }
 /* line 36, ../__compass/sass/_facts.sass */
 #facts li.red {
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   float: right;
   width: auto;
   font-weight: 100;
@@ -734,7 +811,7 @@ a[href^="http://maps.google.com/maps"] {
   height: 30px;
   width: 38px;
   margin-right: 0px;
-  background: black;
+  background-color: black;
   background-image: url(../_img/ico/mail.svg);
   background-repeat: no-repeat;
   background-size: 80%;
@@ -743,7 +820,7 @@ a[href^="http://maps.google.com/maps"] {
 }
 /* line 57, ../__compass/sass/_facts.sass */
 #facts li#img:hover {
-  background: red;
+  background-color: red;
   background-image: url(../_img/ico/mail.svg);
   background-repeat: no-repeat;
   background-size: 80%;

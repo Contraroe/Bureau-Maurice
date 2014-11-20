@@ -45,25 +45,22 @@
 				font-weight: 400
 				font-size: 110%
 				padding: 5px 10px
-				border-radius: 5px
+				@include br(5px)
 				border: 1px solid $wit_2
 				float: right
 				&:hover
 					color: $wit_10
-					background: $wit_2
+					background-color: $wit_2
 					font-weight: 400
 			.active
 				color: $wit_10
-				background: $rood_10
+				background-color: $rood_10
 				font-weight: 400
 #banner
 	position: relative
 	width: 100%
 	height: 600px
-	background: $zwart_5
-	background-image: url(../_img/bg_2.jpg)
-	background-size: cover
-	background-position: center top
-	background-repeat: no-repeat
+	background-color: $zwart_5
+	@include cover-img("../_img/bg_2.jpg")
 	z-index: 0
 

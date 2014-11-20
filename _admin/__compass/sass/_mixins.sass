@@ -4,3 +4,53 @@
 	-moz-border-radius: $radius
 	-ms-border-radius: $radius
 	border-radius: $radius
+
+@mixin bblr($radius) 
+	-webkit-border-bottom-left-radius: $radius
+	-moz-border-bottom-left-radius: $radius
+	-ms-border-bottom-left-radius: $radius
+	border-bottom-left-radius: $radius
+
+@mixin bbrr($radius) 
+	-webkit-border-bottom-right-radius: $radius
+	-moz-border-bottom-right-radius: $radius
+	-ms-border-bottom-right-radius: $radius
+	border-bottom-right-radius: $radius
+
+@mixin btlr($radius) 
+	-webkit-border-top-left-radius: $radius
+	-moz-border-top-left-radius: $radius
+	-ms-border-top-left-radius: $radius
+	border-top-left-radius: $radius
+
+@mixin btrr($radius) 
+	-webkit-border-top-right-radius: $radius
+	-moz-border-top-right-radius: $radius
+	-ms-border-top-right-radius: $radius
+	border-top-right-radius: $radius
+
+
+@mixin cover-img($img-uri)
+	background-image: url($img-uri)
+	background-position: center
+	background-repeat: no-repeat
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	-ms-background-size: cover
+	background-size: cover
+	background-color: #333333
+
+@mixin rightsb
+	overflow: auto 
+	white-space: nowrap
+
+@mixin scrollbar($color_1, $color_2)
+	scrollbar-base-color: $color_1
+	scrollbar-base-color: $color_1
+	scrollbar-3dlight-color: $color_1
+	scrollbar-highlight-color: $color_1
+	scrollbar-track-color: $color_1
+	scrollbar-arrow-color: $color_2
+	scrollbar-shadow-color: $color_2
+	scrollbar-dark-shadow-color: $color_2

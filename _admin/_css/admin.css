@@ -17,17 +17,30 @@ body {
   color: #FFF;
   text-align: center;
   color: black;
+  scrollbar-base-color: black;
+  scrollbar-base-color: black;
+  scrollbar-3dlight-color: black;
+  scrollbar-highlight-color: black;
+  scrollbar-track-color: black;
+  scrollbar-arrow-color: #00c8c8;
+  scrollbar-shadow-color: #00c8c8;
+  scrollbar-dark-shadow-color: #00c8c8;
 }
-/* line 26, ../__compass/sass/admin.sass */
+/* line 27, ../__compass/sass/admin.sass */
 body #wrapper {
   width: 100%;
   height: 100%;
-  background-image: url(../../_img/admin_bg.jpg);
-  background-size: cover;
+  background-image: url("../../_img/admin_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  background-color: #333333;
 }
-/* line 33, ../__compass/sass/admin.sass */
+/* line 31, ../__compass/sass/admin.sass */
 body #wrapper h1 {
   display: block;
   width: 100%;
@@ -39,18 +52,24 @@ body #wrapper h1 {
   margin-top: 50px;
   color: #00c8c8;
 }
-/* line 43, ../__compass/sass/admin.sass */
+/* line 41, ../__compass/sass/admin.sass */
 body #wrapper #left_all {
   width: auto;
-  background: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   height: auto;
   color: white;
   font-size: 65%;
-  height: 100%;
+  height: 80%;
   font-weight: 100;
   float: left;
-  padding: 0 40px;
-  overflow: scroll;
+  padding: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 30px;
 }
 /* line 54, ../__compass/sass/admin.sass */
 body #wrapper #left_all table {
@@ -86,7 +105,10 @@ body #wrapper #left_all table tr td a, body #wrapper #left_all table tr.active t
   color: white;
   display: block;
   padding: 1px;
-  background: rgba(0, 200, 200, 0.8);
+  background-color: rgba(0, 200, 200, 0.8);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
   border-radius: 3px;
   text-align: center;
   font-size: 80%;
@@ -95,7 +117,7 @@ body #wrapper #left_all table tr td a, body #wrapper #left_all table tr.active t
 }
 /* line 83, ../__compass/sass/admin.sass */
 body #wrapper #left_all table tr td a:hover {
-  background: red;
+  background-color: red;
   box-shadow: inset 1px 1px 2px black;
 }
 /* line 86, ../__compass/sass/admin.sass */
@@ -104,25 +126,31 @@ body #wrapper #left_all table tr .active {
 }
 /* line 88, ../__compass/sass/admin.sass */
 body #wrapper #left_all table tr.active {
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 /* line 91, ../__compass/sass/admin.sass */
 body #wrapper #edit, body #wrapper #add {
   color: black;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   float: left;
   padding: 0px 40px 0px 30px;
-  height: 100%;
+  height: 80%;
   font-size: 65%;
-  width: auto;
-  overflow: scroll;
+  padding: 30px 30px 30px 20px;
+  margin: 30px 30px 30px 0px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  overflow: auto;
+  white-space: nowrap;
 }
-/* line 100, ../__compass/sass/admin.sass */
+/* line 102, ../__compass/sass/admin.sass */
 body #wrapper #edit form, body #wrapper #add form {
   text-align: left;
   color: white;
 }
-/* line 103, ../__compass/sass/admin.sass */
+/* line 105, ../__compass/sass/admin.sass */
 body #wrapper #edit form label, body #wrapper #add form label {
   display: block;
   text-decoration: uppercase;
@@ -130,13 +158,16 @@ body #wrapper #edit form label, body #wrapper #add form label {
   color: #00c8c8;
   padding: 10px 0px 5px 0px;
 }
-/* line 109, ../__compass/sass/admin.sass */
+/* line 111, ../__compass/sass/admin.sass */
 body #wrapper #edit form #submit, body #wrapper #add form #submit {
   text-decoration: none;
   color: white;
   display: block;
   padding: 5px;
-  background: rgba(0, 200, 200, 0.8);
+  background-color: rgba(0, 200, 200, 0.8);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
   border-radius: 3px;
   text-align: center;
   font-size: 80%;
@@ -145,39 +176,65 @@ body #wrapper #edit form #submit, body #wrapper #add form #submit {
   border: none;
   float: left;
   width: 105%;
-  margin-bottom: 50px;
 }
-/* line 124, ../__compass/sass/admin.sass */
+/* line 126, ../__compass/sass/admin.sass */
 body #wrapper #edit form #submit:hover, body #wrapper #add form #submit:hover {
-  background: red;
+  background-color: red;
   box-shadow: inset 1px 1px 2px black;
 }
-/* line 127, ../__compass/sass/admin.sass */
+/* line 129, ../__compass/sass/admin.sass */
+body #wrapper #edit form textarea, body #wrapper #add form textarea {
+  resize: none;
+  white-space: pre-wrap;
+}
+/* line 132, ../__compass/sass/admin.sass */
 body #wrapper #edit form textarea, body #wrapper #add form textarea,
 body #wrapper #edit form input,
 body #wrapper #add form input,
 body #wrapper #edit form select,
 body #wrapper #add form select {
   width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
   border-radius: 3px;
   border: none;
   padding: 5px;
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   color: white;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 100;
 }
-/* line 137, ../__compass/sass/admin.sass */
+/* line 142, ../__compass/sass/admin.sass */
 body #wrapper #edit form select, body #wrapper #add form select {
   width: 105%;
+  color: black;
+  font-weight: 400;
+  background-color: #00c8c8;
 }
-/* line 140, ../__compass/sass/admin.sass */
+/* line 148, ../__compass/sass/admin.sass */
 body #wrapper #add {
-  float: right;
-  background: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
+  scrollbar-base-color: white;
+  scrollbar-base-color: white;
+  scrollbar-3dlight-color: white;
+  scrollbar-highlight-color: white;
+  scrollbar-track-color: white;
+  scrollbar-arrow-color: #00c8c8;
+  scrollbar-shadow-color: #00c8c8;
+  scrollbar-dark-shadow-color: #00c8c8;
 }
-/* line 145, ../__compass/sass/admin.sass */
+/* line 153, ../__compass/sass/admin.sass */
 body #wrapper #add form input, body #wrapper #add form select,
 body #wrapper #add form textarea {
-  background: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+  resize: none;
+  white-space: pre-wrap;
+}
+/* line 158, ../__compass/sass/admin.sass */
+body #wrapper #add form select {
+  width: 105%;
+  color: black;
+  font-weight: 400;
+  background-color: #00c8c8;
 }

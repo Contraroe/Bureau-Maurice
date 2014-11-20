@@ -25,9 +25,9 @@
 			input[type=text],
 			input[type=email],
 			input
-				background: $zwart_3
+				background-color: $zwart_3
 				border: 0px
-				border-radius: 5px
+				@include br(5px)
 				padding: 5px 10px
 				font-size: 65%
 				color: $zwart_10
@@ -35,9 +35,9 @@
 				margin-bottom: 20px
 				width: 30%
 				&:valid
-					background: $turk_1
+					background-color: $turk_1
 				&:invalid
-					background: $zwart_2
+					background-color: $zwart_2
 			textarea
 				position: relative
 				width: 60%
@@ -45,21 +45,21 @@
 				float: left
 				margin-right: 20px
 				margin-left: 10px
-				background: $zwart_3
+				background-color: $zwart_3
 				border: 0px
-				border-radius: 5px
+				@include br(5px)
 				padding: 5px 10px
 				font-size: 65%
 				color: $zwart_10
 				font-weight: 200
 				margin-bottom: 10px
 				&:valid
-					background: $turk_1
+					background-color: $turk_1
 				&:invalid
-					background: $zwart_2
+					background-color: $zwart_2
 			#ref
 				width: 90%
-				background: $none
+				background-color: $none
 				padding-left: 20px
 			#ref:focus
 				box-shadow: 0 0 3px $none
@@ -68,27 +68,27 @@
 				display: none
 			input[type=submit]
 				margin-right: 20px
-				background: $turk_10
+				background-color: $turk_10
 				color: $zwart_10
 				&:valid
-					background: $turk_8
+					background-color: $turk_8
 			input[type=reset]
 				width: 15%
 				float: left
 				margin-top: 10px
-				background: $zwart_1
+				background-color: $zwart_1
 				color: $zwart_10
 				&:hover
-					background: $rood_10
+					background-color: $rood_10
 					color: $wit_10
 			input[type=submit]
 				width: 15%
 				float: left
 				margin-top: 10px
-				background: $turk_10
+				background-color: $turk_10
 				color: $wit_10
 				&:hover
-					background: $rood_10
+					background-color: $rood_10
 			input[type=text],
 			input[type=email],
 			input[type=submit], 

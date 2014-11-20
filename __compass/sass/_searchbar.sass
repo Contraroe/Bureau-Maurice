@@ -4,7 +4,7 @@
 		bottom: 0
 		width: 100%
 		height: 30px
-		background: $zwart_10
+		background-color: $zwart_10
 		top: 0px
 		z-index: 99
 		text-align: right
@@ -22,18 +22,18 @@
 				padding: 5px
 				border: 0
 				font-size: 70%
-				border-radius: 3px
-				background: $wit_2
+				@include br(3px)
+				background-color: $wit_2
 				color: $wit_7
 				font-weight: 100
 			label
-				background: none
+				background-color: none
 				font-size: 60%
 				color: $wit_3
 				margin-left: 5px
 			input[type="submit"]
 				width: 40px
-				border-radius: 3px
+				@include br(3px)
 				background-color: $rood_10
 				color: $wit_10
 				font-weight: 100
@@ -44,7 +44,7 @@
 		
 			input[type="submit"]
 				width: auto
-				border-radius: 3px
+				@include br(3px)
 				background-color: $turk_10
 				color: $wit_10
 				font-weight: 100
@@ -63,8 +63,8 @@
 				padding: 5px
 				border: 0
 				font-size: 70%
-				border-radius: 3px
-				background: $wit_2
+				@include br(3px)
+				background-color: $wit_2
 				color: $wit_7
 				font-weight: 100
 				border: 1px solid $wit_1
@@ -79,10 +79,10 @@
 				width: 200px
 				height: 20px
 				font-size: 70%
-				background: $wit_5
+				background-color: $wit_5
 			input[type="submit"]
 				width: 40px
-				border-radius: 3px
+				@include br(3px)
 				background-color: $rood_10
 				color: $wit_10
 				// border: 1px solid $wit_10
@@ -97,6 +97,6 @@
 				height: 32px
 				right: 275px
 				width: 212px
-				border-radius: 0px
+				@include br(0px)
 
 

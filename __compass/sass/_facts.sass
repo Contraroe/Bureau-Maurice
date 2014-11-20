@@ -3,7 +3,7 @@
 		@extend #find_cont
 		top: -80px
 		height: 80px
-		background: $turk_3
+		background-color: $turk_3
 
 #facts
 	text-align: left
@@ -15,7 +15,7 @@
 	color: $wit_10
 	margin: auto
 	margin-top: 15px
-	// background: $wit_5
+	// background-color: $wit_5
 	padding: 0
 	li
 		display: block
@@ -24,17 +24,17 @@
 		width: auto
 		border: 1px solid $wit_2
 		margin: 0
-		border-radius: 5px
+		@include br(5px)
 		margin-right: 15px
-		background: $zwart_5
+		background-color: $zwart_5
 		b
-			// background: $rood_10
+			// background-color: $rood_10
 			color: $rood_10
 			padding: 0px 0px 0px 10px
-			border-radius: 3px
+			@include br(3px)
 			font-size: 120%
 	li.red 
-		background: $zwart_5
+		background-color: $zwart_5
 		float: right
 		width: auto
 		font-weight: 100
@@ -48,14 +48,14 @@
 		height: 30px
 		width: 38px
 		margin-right: 0px
-		background: $zwart_10
+		background-color: $zwart_10
 		background-image: url(../_img/ico/mail.svg)
 		background-repeat: no-repeat
 		background-size: 80%
 		background-position: center
 		padding: 0
 		&:hover
-			background: $rood_10
+			background-color: $rood_10
 			background-image: url(../_img/ico/mail.svg)
 			background-repeat: no-repeat
 			background-size: 80%
