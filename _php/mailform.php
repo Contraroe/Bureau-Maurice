@@ -8,7 +8,7 @@ $check = stripslashes($_POST['check'])."\r\n"; // must be empty
 $ref = stripslashes($_POST['ref'])."\r\n"; 
 
 $subject = "Bureau-Maurice online!";
-$host = "pieter.denorre@lannooprint.be";
+$host = "info@bureau-maurice.be";
 
 $body = <<<EOD
 $ref\r\n\r\n

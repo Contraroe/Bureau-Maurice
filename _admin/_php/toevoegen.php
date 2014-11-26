@@ -1,19 +1,20 @@
 <?php 
 	include ('../../_php/db_config.php');
 	include ('../../_php/db_connect.php');
+	mysql_query("SET NAMES 'utf8'");
 	ini_set('display_errors',1);
 	ini_set('display_startup_errors',1);
 	error_reporting(-1);
-	$u_zaak_id_2 = htmlentities(addslashes($_GET['z_id_2']));
-	$u_regio_2 = htmlentities(addslashes($_GET['regio_2']));
-	$u_locatie_2 = htmlentities(addslashes($_GET['locatie_2']));
-	$u_prijs_2 = htmlentities(addslashes($_GET['prijs_2']));
-	$u_huur_2 = htmlentities(addslashes($_GET['huur_2']));
-	$u_reden_2 = htmlentities(addslashes($_GET['reden_2']));
-	$u_info_2 = htmlentities(addslashes($_GET['info_2']));
-	$u_status_2 = htmlentities(addslashes($_GET['status_2']));
-	$u_cat_id_2 = htmlentities(addslashes($_GET['cat_id_2']));
-	$u_ico_2 = htmlentities(addslashes($_GET['cat_id_2']));
+	$u_zaak_id_2 = html_entity_decode(addslashes($_GET['z_id_2']));
+	$u_regio_2 = html_entity_decode(addslashes($_GET['regio_2']));
+	$u_locatie_2 = html_entity_decode(addslashes($_GET['locatie_2']));
+	$u_prijs_2 = html_entity_decode(addslashes($_GET['prijs_2']));
+	$u_huur_2 = html_entity_decode(addslashes($_GET['huur_2']));
+	$u_reden_2 = html_entity_decode(addslashes($_GET['reden_2']));
+	$u_info_2 = html_entity_decode(addslashes($_GET['info_2']));
+	$u_status_2 = html_entity_decode(addslashes($_GET['status_2']));
+	$u_cat_id_2 = html_entity_decode(addslashes($_GET['cat_id_2']));
+	$u_ico_2 = html_entity_decode(addslashes($_GET['cat_id_2']));
 	$u_icoimg_2 = $u_ico_2 . ".jpg";
 	$a_update = "	INSERT INTO zaken (regio, locatie, prijs, huur, reden, info, status, cat_id, ico) 
 			VALUES ('$u_regio_2', '$u_locatie_2', '$u_prijs_2', '$u_huur_2', '$u_reden_2', '$u_info_2', '$u_status_2', '$u_cat_id_2', '$u_icoimg_2')

@@ -7,7 +7,7 @@
 // $database="maurice";
 
 //local
-$dbhost="localhost";
+$dbhost="159.253.0.15:3306";
 $dbuser="drukkqf12_lannoo";
 $dbpass="maurice";
 $database="drukkqf12_lannooworld2";
