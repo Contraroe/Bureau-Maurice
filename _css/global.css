@@ -54,8 +54,9 @@
 /* line 40, ../__compass/sass/_header.sass */
 #header_cont #header ul li.logo span {
   font-weight: 100;
+  color: white;
 }
-/* line 42, ../__compass/sass/_header.sass */
+/* line 43, ../__compass/sass/_header.sass */
 #header_cont #header ul li#nav {
   display: block;
   margin-top: 20px;
@@ -66,23 +67,26 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid;
+  border-color: white;
+  border-color: rgba(255, 255, 255, 0.2);
   float: right;
 }
-/* line 51, ../__compass/sass/_header.sass */
+/* line 54, ../__compass/sass/_header.sass */
 #header_cont #header ul li#nav:hover {
   color: white;
+  background-color: #00c8c8;
   background-color: rgba(255, 255, 255, 0.2);
   font-weight: 400;
 }
-/* line 55, ../__compass/sass/_header.sass */
+/* line 59, ../__compass/sass/_header.sass */
 #header_cont #header ul .active {
   color: white;
   background-color: red;
   font-weight: 400;
 }
 
-/* line 59, ../__compass/sass/_header.sass */
+/* line 63, ../__compass/sass/_header.sass */
 #banner {
   position: relative;
   width: 100%;
@@ -583,23 +587,23 @@ a[href^="http://maps.google.com/maps"] {
 #wrapper #formcon {
   text-align: left;
   color: black;
-  -ms-input-placeholder-color: rgba(0, 0, 0, 0.8);
+  -ms-input-placeholder-color: black;
 }
 /* line 13, ../__compass/sass/_form.sass */
 #wrapper #formcon ::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
 }
 /* line 15, ../__compass/sass/_form.sass */
 #wrapper #formcon ::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
 }
 /* line 19, ../__compass/sass/_form.sass */
 #wrapper #formcon input:-moz-placeholder {
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
 }
 /* line 21, ../__compass/sass/_form.sass */
 #wrapper #formcon form {
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
 }
 /* line 23, ../__compass/sass/_form.sass */
 #wrapper #formcon form b {
@@ -609,6 +613,7 @@ a[href^="http://maps.google.com/maps"] {
 #wrapper #formcon form input[type=text],
 #wrapper #formcon form input[type=email],
 #wrapper #formcon form input {
+  background-color: #f7f7f7;
   background-color: rgba(0, 0, 0, 0.3);
   border: 0px;
   -webkit-border-radius: 5px;
@@ -622,19 +627,21 @@ a[href^="http://maps.google.com/maps"] {
   margin-bottom: 20px;
   width: 30%;
 }
-/* line 37, ../__compass/sass/_form.sass */
+/* line 38, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text]:valid,
 #wrapper #formcon form input[type=email]:valid,
 #wrapper #formcon form input:valid {
+  background-color: #00c8c8;
   background-color: rgba(0, 200, 200, 0.1);
 }
-/* line 39, ../__compass/sass/_form.sass */
+/* line 41, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text]:invalid,
 #wrapper #formcon form input[type=email]:invalid,
 #wrapper #formcon form input:invalid {
+  background-color: red;
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 41, ../__compass/sass/_form.sass */
+/* line 44, ../__compass/sass/_form.sass */
 #wrapper #formcon form textarea {
   position: relative;
   width: 60%;
@@ -642,6 +649,7 @@ a[href^="http://maps.google.com/maps"] {
   float: left;
   margin-right: 20px;
   margin-left: 10px;
+  background-color: #f7f7f7;
   background-color: rgba(0, 0, 0, 0.3);
   border: 0px;
   -webkit-border-radius: 5px;
@@ -654,40 +662,42 @@ a[href^="http://maps.google.com/maps"] {
   font-weight: 200;
   margin-bottom: 10px;
 }
-/* line 56, ../__compass/sass/_form.sass */
+/* line 60, ../__compass/sass/_form.sass */
 #wrapper #formcon form textarea:valid {
+  background-color: #00c8c8;
   background-color: rgba(0, 200, 200, 0.1);
 }
-/* line 58, ../__compass/sass/_form.sass */
+/* line 63, ../__compass/sass/_form.sass */
 #wrapper #formcon form textarea:invalid {
+  background-color: red;
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 60, ../__compass/sass/_form.sass */
+/* line 66, ../__compass/sass/_form.sass */
 #wrapper #formcon form #ref {
   width: 90%;
   background-color: transparent;
   padding-left: 20px;
 }
-/* line 64, ../__compass/sass/_form.sass */
+/* line 70, ../__compass/sass/_form.sass */
 #wrapper #formcon form #ref:focus {
   box-shadow: 0 0 3px transparent;
   border: 1px solid transparent;
 }
-/* line 67, ../__compass/sass/_form.sass */
+/* line 73, ../__compass/sass/_form.sass */
 #wrapper #formcon form #check {
   display: none;
 }
-/* line 69, ../__compass/sass/_form.sass */
+/* line 75, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit] {
   margin-right: 20px;
   background-color: #00c8c8;
   color: black;
 }
-/* line 73, ../__compass/sass/_form.sass */
+/* line 79, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit]:valid {
   background-color: rgba(0, 200, 200, 0.8);
 }
-/* line 75, ../__compass/sass/_form.sass */
+/* line 81, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=reset] {
   width: 15%;
   float: left;
@@ -695,12 +705,12 @@ a[href^="http://maps.google.com/maps"] {
   background-color: rgba(0, 0, 0, 0.1);
   color: black;
 }
-/* line 81, ../__compass/sass/_form.sass */
+/* line 87, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=reset]:hover {
   background-color: red;
   color: white;
 }
-/* line 84, ../__compass/sass/_form.sass */
+/* line 90, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit] {
   width: 15%;
   float: left;
@@ -708,11 +718,11 @@ a[href^="http://maps.google.com/maps"] {
   background-color: #00c8c8;
   color: white;
 }
-/* line 90, ../__compass/sass/_form.sass */
+/* line 96, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=submit]:hover {
   background-color: red;
 }
-/* line 92, ../__compass/sass/_form.sass */
+/* line 98, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text],
 #wrapper #formcon form input[type=email],
 #wrapper #formcon form input[type=submit],
@@ -725,7 +735,7 @@ a[href^="http://maps.google.com/maps"] {
   outline: none;
   border: 1px solid transparent;
 }
-/* line 103, ../__compass/sass/_form.sass */
+/* line 109, ../__compass/sass/_form.sass */
 #wrapper #formcon form input[type=text]:focus,
 #wrapper #formcon form input[type=email]:focus,
 #wrapper #formcon form input[type=submit]:focus,
@@ -734,7 +744,7 @@ a[href^="http://maps.google.com/maps"] {
   box-shadow: 0 0 3px #00c8c8;
   border: 1px solid #00c8c8;
 }
-/* line 110, ../__compass/sass/_form.sass */
+/* line 116, ../__compass/sass/_form.sass */
 #wrapper #formcon form label, #wrapper #formcon form #content #find_cont #search input, #content #find_cont #search #wrapper #formcon form input, #wrapper #formcon form #content #data_cont #search input, #content #data_cont #search #wrapper #formcon form input, #wrapper #formcon form #content #find_cont #search #find, #content #find_cont #search #wrapper #formcon form #find, #wrapper #formcon form #content #data_cont #search #find, #content #data_cont #search #wrapper #formcon form #find,
 #wrapper #formcon form #content #find_cont #search #pricerange,
 #content #find_cont #search #wrapper #formcon form #pricerange,
@@ -750,10 +760,11 @@ a[href^="http://maps.google.com/maps"] {
 #content #data_cont {
   top: -80px;
   height: 80px;
+  background-color: #00c8c8;
   background-color: rgba(0, 200, 200, 0.3);
 }
 
-/* line 8, ../__compass/sass/_facts.sass */
+/* line 9, ../__compass/sass/_facts.sass */
 #facts {
   text-align: left;
   width: 978px;
@@ -772,16 +783,19 @@ a[href^="http://maps.google.com/maps"] {
   float: left;
   padding: 3px 10px 3px 10px;
   width: auto;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid;
+  border-color: white;
+  border-color: rgba(255, 255, 255, 0.2);
   margin: 0;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
   margin-right: 15px;
+  background-color: black;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 30, ../__compass/sass/_facts.sass */
+/* line 33, ../__compass/sass/_facts.sass */
 #facts li b {
   color: red;
   padding: 0px 0px 0px 10px;
@@ -791,7 +805,7 @@ a[href^="http://maps.google.com/maps"] {
   border-radius: 3px;
   font-size: 120%;
 }
-/* line 36, ../__compass/sass/_facts.sass */
+/* line 39, ../__compass/sass/_facts.sass */
 #facts li.red {
   background-color: rgba(0, 0, 0, 0.5);
   float: right;
@@ -799,13 +813,13 @@ a[href^="http://maps.google.com/maps"] {
   font-weight: 100;
   text-align: center;
 }
-/* line 42, ../__compass/sass/_facts.sass */
+/* line 45, ../__compass/sass/_facts.sass */
 #facts li.red b {
   color: white;
   font-weight: 400;
   margin-right: 10px;
 }
-/* line 46, ../__compass/sass/_facts.sass */
+/* line 49, ../__compass/sass/_facts.sass */
 #facts li#img {
   display: block;
   height: 30px;
@@ -818,7 +832,7 @@ a[href^="http://maps.google.com/maps"] {
   background-position: center;
   padding: 0;
 }
-/* line 57, ../__compass/sass/_facts.sass */
+/* line 60, ../__compass/sass/_facts.sass */
 #facts li#img:hover {
   background-color: red;
   background-image: url(../_img/ico/mail.svg);
@@ -827,7 +841,7 @@ a[href^="http://maps.google.com/maps"] {
   background-position: center;
   padding: 0;
 }
-/* line 64, ../__compass/sass/_facts.sass */
+/* line 67, ../__compass/sass/_facts.sass */
 #facts li#img a {
   display: block;
   width: 100%;

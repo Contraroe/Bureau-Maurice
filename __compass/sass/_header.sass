@@ -39,6 +39,7 @@
 				color: $rood_10
 			li.logo span
 				font-weight: 100
+				color: $wit_10
 			li#nav
 				display: block
 				margin-top: 20px
@@ -46,10 +47,13 @@
 				font-size: 110%
 				padding: 5px 10px
 				@include br(5px)
-				border: 1px solid $wit_2
+				border: 1px solid
+				border-color: $wit_10
+				border-color: $wit_2
 				float: right
 				&:hover
 					color: $wit_10
+					background-color: $turk_10
 					background-color: $wit_2
 					font-weight: 400
 			.active

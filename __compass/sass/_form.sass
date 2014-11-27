@@ -11,20 +11,21 @@
 		text-align: left
 		color: $zwart_10
 		::-webkit-input-placeholder
-			color: $zwart_8
+			color: $zwart_10
 		::-moz-placeholder 
-			color: $zwart_8
+			color: $zwart_10
 		:-ms-input-placeholder 
-			color: $zwart_8
+			color: $zwart_10
 		input:-moz-placeholder 
-			color: $zwart_8
+			color: $zwart_10
 		form
-			color: $zwart_8
+			color: $zwart_10
 			b 
 				color: $turk_10
 			input[type=text],
 			input[type=email],
 			input
+				background-color: #f7f7f7
 				background-color: $zwart_3
 				border: 0px
 				@include br(5px)
@@ -35,8 +36,10 @@
 				margin-bottom: 20px
 				width: 30%
 				&:valid
+					background-color: $turk_10
 					background-color: $turk_1
 				&:invalid
+					background-color: $rood_10
 					background-color: $zwart_2
 			textarea
 				position: relative
@@ -45,6 +48,7 @@
 				float: left
 				margin-right: 20px
 				margin-left: 10px
+				background-color: #f7f7f7
 				background-color: $zwart_3
 				border: 0px
 				@include br(5px)
@@ -54,8 +58,10 @@
 				font-weight: 200
 				margin-bottom: 10px
 				&:valid
+					background-color: $turk_10
 					background-color: $turk_1
 				&:invalid
+					background-color: $rood_10
 					background-color: $zwart_2
 			#ref
 				width: 90%
