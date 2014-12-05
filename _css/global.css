@@ -1,1 +1,873 @@
-@import url(http://fonts.googleapis.com/css?family=Abel|Cantata+One|Alegreya+Sans:100,200,400,500,800);#header_cont{width:100%;height:auto;background-color:#000;font-size:60%;margin-top:0;overflow:hidden}#header_cont #header{height:100%;width:978px;margin:auto}#header_cont #header #logo{width:90px;height:auto}#header_cont #header ul{display:block;list-style-type:none;height:auto;overflow:hidden;margin:0;padding:0;font-family:"Alegreya Sans",sans-serif}#header_cont #header ul li{width:auto;height:auto;float:left;text-align:center;padding:10px 20px;cursor:pointer;margin-right:10px;text-align:left}#header_cont #header ul li.logo{margin-right:30px;padding-left:0px;font-size:300%}#header_cont #header ul li.logo b{font-weight:800;color:red}#header_cont #header ul li.logo span{font-weight:100;color:#fff}#header_cont #header ul li#nav{display:block;margin-top:20px;font-weight:400;font-size:110%;padding:5px 10px;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px;border:1px solid;border-color:#fff;border-color:rgba(255,255,255,0.2);float:right}#header_cont #header ul li#nav:hover{color:#fff;background-color:#00c8c8;background-color:rgba(255,255,255,0.2);font-weight:400}#header_cont #header ul .active{color:#fff;background-color:red;font-weight:400}#banner{position:relative;width:100%;height:600px;background-color:rgba(0,0,0,0.5);background-image:url("../_img/bg_2.jpg");background-position:top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;z-index:0}#content{position:relative;width:100%;height:auto}#content #wrapper{width:978px;margin:auto;overflow:hidden;height:auto;font-family:"Alegreya Sans",sans-serif;font-weight:400;padding-bottom:20px}#content #wrapper h1{text-align:left;color:#000;font-family:"Alegreya Sans",sans-serif;font-size:200%;font-weight:800;display:block;border-bottom:1px solid #000;margin-top:100px}#content #wrapper h1 i{font-size:50%;font-weight:100}#content #wrapper #frituren.no{width:974px;height:auto;color:#000;margin:0;padding:20px 0px;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;border-radius:10px;font-family:"Alegreya Sans",sans-serif;font-weight:200;font-size:130%;text-align:center;background-color:rgba(0,0,0,0.1);margin-top:50px;border:2px solid red}#content #wrapper #frituren.no b{font-weight:800;color:red}#content #wrapper #frituren{color:#000;height:auto;overflow:hidden;padding:0px 0px;width:30%;margin-right:1.6%;margin-left:1.6%;margin-top:10px;float:left}#content #wrapper #frituren #info{position:relative;text-align:left;width:100%;height:auto;float:left;padding:0px;font-size:70%;font-weight:100;padding:20px 0;font-weight:100}#content #wrapper #frituren #info #text{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;display:-ms-box;-ms-line-clamp:2;-ms-box-orient:vertical;width:100%;overflow:hidden;text-overflow:ellipsis;font-weight:100;margin-bottom:20px;max-height:40px;min-height:40px}#content #wrapper #frituren #info #text:after{content:"...";font-weight:400;position:absolute;bottom:79px;right:0;padding:0 10px 1px 45px;background:linear-gradient(to right, rgba(255,255,255,0.5), #fff 50%);color:#000;border-right:10px}#content #wrapper #frituren #info h2{height:auto;display:block;font-weight:800;font-size:200%;margin-top:10px}#content #wrapper #frituren #info h6{display:block;width:auto;font-weight:400;height:auto;background-color:#000;color:#fff;padding:10px;margin-bottom:10px;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px}#content #wrapper #frituren #info #extra{position:absolute;bottom:10px;right:10px;width:40px;height:40px;background-color:#00c8c8;-webkit-border-radius:20px;-moz-border-radius:20px;-ms-border-radius:20px;border-radius:20px;line-height:40px;text-align:center;border:1px solid rgba(0,0,0,0.3);color:#fff;cursor:pointer;font-size:200%;font-weight:400}#content #wrapper #frituren #info #extra:hover{color:#fff;background-color:red}#content #wrapper #frituren #info #img{overflow:hidden;width:100%;height:auto;margin:10px 0;padding:0;margin-right:50px}#content #wrapper #frituren #info #img img{width:100%;margin:0;padding:0;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px}#content #wrapper #frituren #info #img .verkocht{position:absolute;width:auto;height:auto;background-color:red;color:#fff;font-weight:400;padding:5px 20px;font-size:130%;right:0;-webkit-border-bottom-left-radius:5px;-moz-border-bottom-left-radius:5px;-ms-border-bottom-left-radius:5px;border-bottom-left-radius:5px}#content #wrapper #detail{position:relative;width:100%;color:#000;text-align:left;font-size:60%;line-height:20px}#content #wrapper #detail img{width:50%;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px;margin-bottom:10px;float:right;margin-left:5%}#content #wrapper #detail h6{margin-top:15px;font-size:120%}#content #wrapper #detail .verkocht{position:absolute;width:auto;height:auto;background-color:red;color:#fff;font-weight:400;padding:5px 20px;font-size:130%;right:0;-webkit-border-bottom-left-radius:5px;-moz-border-bottom-left-radius:5px;-ms-border-bottom-left-radius:5px;border-bottom-left-radius:5px}#content #wrapper #detail #mailref{padding:10px 20px;background-color:#00c8c8;color:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px;text-align:center;width:100%}#content #wrapper #detail #mailref:hover{background-color:red}#container.map{width:100%;height:50vh;color:#000;z-index:99}#container.map #map{position:relative;width:100%;height:100%;box-shadow:inset 0px 30px 20px rgba(0,0,0,0.4);overflow:hidden}#container.map #map #mapcont{position:relative;width:100%;height:100%;margin-left:0px;background-color:rgba(0,0,0,0.3)}#container.map #map #mapcont #gmap_canvas{position:relative;width:100%;height:100%;background-color:rgba(0,0,0,0.7) !important}a[href^="http://maps.google.com/maps"]{display:none !important}.gmnoprint a,.gmnoprint span{display:none}.gmnoprint div{background-color:none !important}#footer_cont{width:100%;height:60px;background-color:red;margin-top:100px}#content #find_cont,#content #data_cont{position:absolute;bottom:0;width:100%;height:30px;background-color:#000;top:0px;z-index:99;text-align:right;padding:10px 0px;margin:0}#content #find_cont #postcode,#content #data_cont #postcode{width:978px;margin:auto}#content #find_cont #clear,#content #data_cont #clear{padding-left:5px;float:left}#content #find_cont #clear input,#content #data_cont #clear input,#content #find_cont #clear label,#content #data_cont #clear label,#content #find_cont #clear #search input,#content #find_cont #search #clear input,#content #data_cont #clear #search input,#content #data_cont #search #clear input,#content #find_cont #clear #search #find,#content #find_cont #search #clear #find,#content #data_cont #clear #search #find,#content #data_cont #search #clear #find,#content #find_cont #clear #search #pricerange,#content #find_cont #search #clear #pricerange,#content #data_cont #clear #search #pricerange,#content #data_cont #search #clear #pricerange{height:20px;padding:5px;border:0;font-size:70%;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px;background-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-weight:100}#content #find_cont #clear label,#content #data_cont #clear label,#content #find_cont #clear #search input,#content #find_cont #search #clear input,#content #data_cont #clear #search input,#content #data_cont #search #clear input,#content #find_cont #clear #search #find,#content #find_cont #search #clear #find,#content #data_cont #clear #search #find,#content #data_cont #search #clear #find,#content #find_cont #clear #search #pricerange,#content #find_cont #search #clear #pricerange,#content #data_cont #clear #search #pricerange,#content #data_cont #search #clear #pricerange{background-color:none;font-size:60%;color:rgba(255,255,255,0.3);margin-left:5px}#content #find_cont #clear input[type="submit"],#content #data_cont #clear input[type="submit"]{width:40px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px;background-color:red;color:#fff;font-weight:100;height:auto}#content #find_cont #clear input[type="submit"]:hover,#content #data_cont #clear input[type="submit"]:hover{background-color:rgba(255,255,255,0.7);color:#000}#content #find_cont #clear input[type="submit"],#content #data_cont #clear input[type="submit"]{width:auto;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px;background-color:#00c8c8;color:#fff;font-weight:100;height:auto;border:1px solid rgba(255,255,255,0.2)}#content #find_cont #clear input[type="submit"]:hover,#content #data_cont #clear input[type="submit"]:hover{background-color:red;color:#fff}#content #find_cont #search,#content #data_cont #search{position:relative;padding-left:5px;width:600px;float:right}#content #find_cont #search label,#content #data_cont #search label,#content #find_cont #search input,#content #data_cont #search input,#content #find_cont #search #find,#content #data_cont #search #find,#content #find_cont #search #pricerange,#content #data_cont #search #pricerange{height:20px;padding:5px;border:0;font-size:70%;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px;background-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-weight:100;border:1px solid rgba(255,255,255,0.1);margin-right:10px}#content #find_cont #search #find,#content #data_cont #search #find,#content #find_cont #search #pricerange,#content #data_cont #search #pricerange{font-weight:100;color:#000;width:200px;height:20px;font-size:70%;background-color:rgba(255,255,255,0.5)}#content #find_cont #search input[type="submit"],#content #data_cont #search input[type="submit"]{width:40px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px;background-color:red;color:#fff;font-weight:100;height:auto;margin-right:0px}#content #find_cont #search input[type="submit"]:hover,#content #data_cont #search input[type="submit"]:hover{background-color:rgba(255,255,255,0.7);color:#000}#content #find_cont #search #pricerange,#content #data_cont #search #pricerange{position:absolute;height:32px;right:275px;width:212px;-webkit-border-radius:0px;-moz-border-radius:0px;-ms-border-radius:0px;border-radius:0px}#wrapper h1{margin-bottom:50px}#wrapper h1 #small{font-size:50%;font-weight:200;margin-left:50px}#wrapper h1 #small b{color:#00c8c8}#wrapper #formcon{text-align:left;color:#000;-ms-input-placeholder-color:#000}#wrapper #formcon ::-webkit-input-placeholder{color:#000}#wrapper #formcon ::-moz-placeholder{color:#000}#wrapper #formcon input:-moz-placeholder{color:#000}#wrapper #formcon form{color:#000}#wrapper #formcon form b{color:#00c8c8}#wrapper #formcon form input[type=text],#wrapper #formcon form input[type=email],#wrapper #formcon form input{background-color:#f7f7f7;background-color:rgba(0,0,0,0.3);border:0px;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px;padding:5px 10px;font-size:65%;color:#000;font-weight:200;margin-bottom:20px;width:30%}#wrapper #formcon form input[type=text]:valid,#wrapper #formcon form input[type=email]:valid,#wrapper #formcon form input:valid{background-color:#00c8c8;background-color:rgba(0,200,200,0.1)}#wrapper #formcon form input[type=text]:invalid,#wrapper #formcon form input[type=email]:invalid,#wrapper #formcon form input:invalid{background-color:red;background-color:rgba(0,0,0,0.2)}#wrapper #formcon form textarea{position:relative;width:60%;margin-top:2px;float:left;margin-right:20px;margin-left:10px;background-color:#f7f7f7;background-color:rgba(0,0,0,0.3);border:0px;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px;padding:5px 10px;font-size:65%;color:#000;font-weight:200;margin-bottom:10px}#wrapper #formcon form textarea:valid{background-color:#00c8c8;background-color:rgba(0,200,200,0.1)}#wrapper #formcon form textarea:invalid{background-color:red;background-color:rgba(0,0,0,0.2)}#wrapper #formcon form #ref{width:90%;background-color:transparent;padding-left:20px}#wrapper #formcon form #ref:focus{box-shadow:0 0 3px transparent;border:1px solid transparent}#wrapper #formcon form #check{display:none}#wrapper #formcon form input[type=submit]{margin-right:20px;background-color:#00c8c8;color:#000}#wrapper #formcon form input[type=submit]:valid{background-color:rgba(0,200,200,0.8)}#wrapper #formcon form input[type=reset]{width:15%;float:left;margin-top:10px;background-color:rgba(0,0,0,0.1);color:#000}#wrapper #formcon form input[type=reset]:hover{background-color:red;color:#fff}#wrapper #formcon form input[type=submit]{width:15%;float:left;margin-top:10px;background-color:#00c8c8;color:#fff}#wrapper #formcon form input[type=submit]:hover{background-color:red}#wrapper #formcon form input[type=text],#wrapper #formcon form input[type=email],#wrapper #formcon form input[type=submit],#wrapper #formcon form input[type=reset],#wrapper #formcon form textarea{-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;outline:none;border:1px solid transparent}#wrapper #formcon form input[type=text]:focus,#wrapper #formcon form input[type=email]:focus,#wrapper #formcon form input[type=submit]:focus,#wrapper #formcon form input[type=reset]:focus,#wrapper #formcon form textarea:focus{box-shadow:0 0 3px #00c8c8;border:1px solid #00c8c8}#wrapper #formcon form label,#wrapper #formcon form #content #find_cont #search input,#content #find_cont #search #wrapper #formcon form input,#wrapper #formcon form #content #data_cont #search input,#content #data_cont #search #wrapper #formcon form input,#wrapper #formcon form #content #find_cont #search #find,#content #find_cont #search #wrapper #formcon form #find,#wrapper #formcon form #content #data_cont #search #find,#content #data_cont #search #wrapper #formcon form #find,#wrapper #formcon form #content #find_cont #search #pricerange,#content #find_cont #search #wrapper #formcon form #pricerange,#wrapper #formcon form #content #data_cont #search #pricerange,#content #data_cont #search #wrapper #formcon form #pricerange{font-size:90%;padding-left:20px;font-weight:800;color:#00c8c8}#content #data_cont{top:-80px;height:80px;background-color:#00c8c8;background-color:rgba(0,200,200,0.3)}#facts{text-align:left;width:978px;height:100%;font-size:70%;font-weight:100;font-family:"Alegreya Sans",sans-serif;color:#fff;margin:auto;margin-top:15px;padding:0}#facts li{display:block;float:left;padding:3px 10px 3px 10px;width:auto;border:1px solid;border-color:#fff;border-color:rgba(255,255,255,0.2);margin:0;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px;margin-right:15px;background-color:#000;background-color:rgba(0,0,0,0.5)}#facts li b{color:red;padding:0px 0px 0px 10px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px;font-size:120%}#facts li.red{background-color:rgba(0,0,0,0.5);float:right;width:auto;font-weight:100;text-align:center}#facts li.red b{color:#fff;font-weight:400;margin-right:10px}#facts li#img{display:block;height:30px;width:38px;margin-right:0px;background-color:#000;background-image:url(../_img/ico/mail.svg);background-repeat:no-repeat;background-size:80%;background-position:center;padding:0}#facts li#img:hover{background-color:red;background-image:url(../_img/ico/mail.svg);background-repeat:no-repeat;background-size:80%;background-position:center;padding:0}#facts li#img a{display:block;width:100%;height:100%}a{text-decoration:none;color:#fff}html{height:100%;margin:0;padding:0;width:100%;font-size:1.5em}body{height:100%;width:100%;font-size:100%;color:#000;text-align:center}
+@import url(http://fonts.googleapis.com/css?family=Abel|Cantata+One|Alegreya+Sans:100,200,400,500,800);
+/* line 2, ../__compass/sass/_header.sass */
+#header_cont {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  font-size: 60%;
+  margin-top: 0;
+  overflow: hidden;
+}
+/* line 9, ../__compass/sass/_header.sass */
+#header_cont #header {
+  height: 100%;
+  width: 978px;
+  margin: auto;
+}
+/* line 13, ../__compass/sass/_header.sass */
+#header_cont #header #logo {
+  width: 90px;
+  height: auto;
+}
+/* line 16, ../__compass/sass/_header.sass */
+#header_cont #header ul {
+  display: block;
+  list-style-type: none;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya Sans", sans-serif;
+}
+/* line 24, ../__compass/sass/_header.sass */
+#header_cont #header ul li {
+  width: auto;
+  height: auto;
+  float: left;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  text-align: left;
+}
+/* line 33, ../__compass/sass/_header.sass */
+#header_cont #header ul li.logo {
+  margin-right: 30px;
+  padding-left: 0px;
+  font-size: 300%;
+}
+/* line 37, ../__compass/sass/_header.sass */
+#header_cont #header ul li.logo b {
+  font-weight: 800;
+  color: red;
+}
+/* line 40, ../__compass/sass/_header.sass */
+#header_cont #header ul li.logo span {
+  font-weight: 100;
+  color: white;
+}
+/* line 43, ../__compass/sass/_header.sass */
+#header_cont #header ul li#nav {
+  display: block;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 110%;
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: white;
+  border-color: rgba(255, 255, 255, 0.2);
+  float: right;
+}
+/* line 54, ../__compass/sass/_header.sass */
+#header_cont #header ul li#nav:hover {
+  color: white;
+  background-color: #00c8c8;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 400;
+}
+/* line 59, ../__compass/sass/_header.sass */
+#header_cont #header ul .active {
+  color: white;
+  background-color: red;
+  font-weight: 400;
+}
+
+/* line 63, ../__compass/sass/_header.sass */
+#banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../_img/bg_2.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 0;
+}
+
+/* line 1, ../__compass/sass/_content.sass */
+#content {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+/* line 6, ../__compass/sass/_content.sass */
+#content #wrapper {
+  width: 978px;
+  margin: auto;
+  overflow: hidden;
+  height: auto;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+/* line 14, ../__compass/sass/_content.sass */
+#content #wrapper h1 {
+  text-align: left;
+  color: black;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 200%;
+  font-weight: 800;
+  display: block;
+  border-bottom: 1px solid black;
+  margin-top: 100px;
+}
+/* line 23, ../__compass/sass/_content.sass */
+#content #wrapper h1 i {
+  font-size: 50%;
+  font-weight: 100;
+}
+/* line 26, ../__compass/sass/_content.sass */
+#content #wrapper #frituren.no {
+  width: 974px;
+  height: auto;
+  color: black;
+  margin: 0;
+  padding: 20px 0px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 200;
+  font-size: 130%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  border: 2px solid red;
+}
+/* line 40, ../__compass/sass/_content.sass */
+#content #wrapper #frituren.no b {
+  font-weight: 800;
+  color: red;
+}
+/* line 43, ../__compass/sass/_content.sass */
+#content #wrapper #frituren {
+  color: black;
+  height: auto;
+  overflow: hidden;
+  padding: 0px 0px;
+  width: 30%;
+  margin-right: 1.6%;
+  margin-left: 1.6%;
+  margin-top: 10px;
+  float: left;
+}
+/* line 53, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 0px;
+  font-size: 70%;
+  font-weight: 100;
+  padding: 20px 0;
+  font-weight: 100;
+}
+/* line 64, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info #text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -ms-box;
+  -ms-line-clamp: 2;
+  -ms-box-orient: vertical;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 100;
+  margin-bottom: 20px;
+  max-height: 40px;
+  min-height: 40px;
+}
+/* line 78, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info #text:after {
+  content: "...";
+  font-weight: 400;
+  position: absolute;
+  bottom: 79px;
+  right: 0;
+  padding: 0 10px 1px 45px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5), white 50%);
+  color: black;
+  border-right: 10px;
+}
+/* line 88, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info h2 {
+  height: auto;
+  display: block;
+  font-weight: 800;
+  font-size: 200%;
+  margin-top: 10px;
+}
+/* line 94, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info h6 {
+  display: block;
+  width: auto;
+  font-weight: 400;
+  height: auto;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 104, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info #extra {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #00c8c8;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+  font-size: 200%;
+  font-weight: 400;
+}
+/* line 119, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info #extra:hover {
+  color: white;
+  background-color: red;
+}
+/* line 122, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info #img {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  padding: 0;
+  margin-right: 50px;
+}
+/* line 129, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info #img img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 134, ../__compass/sass/_content.sass */
+#content #wrapper #frituren #info #img .verkocht {
+  position: absolute;
+  width: auto;
+  height: auto;
+  background-color: red;
+  color: white;
+  font-weight: 400;
+  padding: 5px 20px;
+  font-size: 130%;
+  right: 0;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 146, ../__compass/sass/_content.sass */
+#content #wrapper #detail {
+  position: relative;
+  width: 100%;
+  color: black;
+  text-align: left;
+  font-size: 60%;
+  line-height: 20px;
+}
+/* line 153, ../__compass/sass/_content.sass */
+#content #wrapper #detail img {
+  width: 50%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  float: right;
+  margin-left: 5%;
+}
+/* line 159, ../__compass/sass/_content.sass */
+#content #wrapper #detail h6 {
+  margin-top: 15px;
+  font-size: 120%;
+}
+/* line 162, ../__compass/sass/_content.sass */
+#content #wrapper #detail .verkocht {
+  position: absolute;
+  width: auto;
+  height: auto;
+  background-color: red;
+  color: white;
+  font-weight: 400;
+  padding: 5px 20px;
+  font-size: 130%;
+  right: 0;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 173, ../__compass/sass/_content.sass */
+#content #wrapper #detail #mailref {
+  padding: 10px 20px;
+  background-color: #00c8c8;
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+/* line 180, ../__compass/sass/_content.sass */
+#content #wrapper #detail #mailref:hover {
+  background-color: red;
+}
+
+/* line 1, ../__compass/sass/_footer.sass */
+#container.map {
+  width: 100%;
+  height: 50vh;
+  color: black;
+  z-index: 99;
+}
+/* line 6, ../__compass/sass/_footer.sass */
+#container.map #map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 30px 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+/* line 12, ../__compass/sass/_footer.sass */
+#container.map #map #mapcont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 18, ../__compass/sass/_footer.sass */
+#container.map #map #mapcont #gmap_canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* line 25, ../__compass/sass/_footer.sass */
+a[href^="http://maps.google.com/maps"] {
+  display: none !important;
+}
+
+/* line 28, ../__compass/sass/_footer.sass */
+.gmnoprint a, .gmnoprint span {
+  display: none;
+}
+
+/* line 31, ../__compass/sass/_footer.sass */
+.gmnoprint div {
+  background-color: none !important;
+}
+
+/* line 34, ../__compass/sass/_footer.sass */
+#footer_cont {
+  width: 100%;
+  height: 60px;
+  background-color: red;
+  margin-top: 100px;
+}
+
+/* line 2, ../__compass/sass/_searchbar.sass */
+#content #find_cont, #content #data_cont {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  top: 0px;
+  z-index: 99;
+  text-align: right;
+  padding: 10px 0px;
+  margin: 0;
+}
+/* line 13, ../__compass/sass/_searchbar.sass */
+#content #find_cont #postcode, #content #data_cont #postcode {
+  width: 978px;
+  margin: auto;
+}
+/* line 16, ../__compass/sass/_searchbar.sass */
+#content #find_cont #clear, #content #data_cont #clear {
+  padding-left: 5px;
+  float: left;
+}
+/* line 19, ../__compass/sass/_searchbar.sass */
+#content #find_cont #clear input, #content #data_cont #clear input,
+#content #find_cont #clear label,
+#content #data_cont #clear label,
+#content #find_cont #clear #search input,
+#content #find_cont #search #clear input,
+#content #data_cont #clear #search input,
+#content #data_cont #search #clear input,
+#content #find_cont #clear #search #find,
+#content #find_cont #search #clear #find,
+#content #data_cont #clear #search #find,
+#content #data_cont #search #clear #find,
+#content #find_cont #clear #search #pricerange,
+#content #find_cont #search #clear #pricerange,
+#content #data_cont #clear #search #pricerange,
+#content #data_cont #search #clear #pricerange {
+  height: 20px;
+  padding: 5px;
+  border: 0;
+  font-size: 70%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+}
+/* line 29, ../__compass/sass/_searchbar.sass */
+#content #find_cont #clear label, #content #data_cont #clear label, #content #find_cont #clear #search input, #content #find_cont #search #clear input, #content #data_cont #clear #search input, #content #data_cont #search #clear input, #content #find_cont #clear #search #find, #content #find_cont #search #clear #find, #content #data_cont #clear #search #find, #content #data_cont #search #clear #find,
+#content #find_cont #clear #search #pricerange,
+#content #find_cont #search #clear #pricerange,
+#content #data_cont #clear #search #pricerange,
+#content #data_cont #search #clear #pricerange {
+  background-color: none;
+  font-size: 60%;
+  color: rgba(255, 255, 255, 0.3);
+  margin-left: 5px;
+}
+/* line 34, ../__compass/sass/_searchbar.sass */
+#content #find_cont #clear input[type="submit"], #content #data_cont #clear input[type="submit"] {
+  width: 40px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: red;
+  color: white;
+  font-weight: 100;
+  height: auto;
+}
+/* line 41, ../__compass/sass/_searchbar.sass */
+#content #find_cont #clear input[type="submit"]:hover, #content #data_cont #clear input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+/* line 45, ../__compass/sass/_searchbar.sass */
+#content #find_cont #clear input[type="submit"], #content #data_cont #clear input[type="submit"] {
+  width: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #00c8c8;
+  color: white;
+  font-weight: 100;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 53, ../__compass/sass/_searchbar.sass */
+#content #find_cont #clear input[type="submit"]:hover, #content #data_cont #clear input[type="submit"]:hover {
+  background-color: red;
+  color: white;
+}
+/* line 56, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search, #content #data_cont #search {
+  position: relative;
+  padding-left: 5px;
+  width: 600px;
+  float: right;
+}
+/* line 61, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search label, #content #data_cont #search label, #content #find_cont #search input, #content #data_cont #search input, #content #find_cont #search #find, #content #data_cont #search #find,
+#content #find_cont #search #pricerange,
+#content #data_cont #search #pricerange {
+  height: 20px;
+  padding: 5px;
+  border: 0;
+  font-size: 70%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+/* line 74, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search #find, #content #data_cont #search #find,
+#content #find_cont #search #pricerange,
+#content #data_cont #search #pricerange {
+  font-weight: 100;
+  color: black;
+  width: 200px;
+  height: 20px;
+  font-size: 70%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 83, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search input[type="submit"], #content #data_cont #search input[type="submit"] {
+  width: 40px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: red;
+  color: white;
+  font-weight: 100;
+  height: auto;
+  margin-right: 0px;
+}
+/* line 92, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search input[type="submit"]:hover, #content #data_cont #search input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+/* line 95, ../__compass/sass/_searchbar.sass */
+#content #find_cont #search #pricerange, #content #data_cont #search #pricerange {
+  position: absolute;
+  height: 32px;
+  right: 275px;
+  width: 212px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* line 2, ../__compass/sass/_form.sass */
+#wrapper h1 {
+  margin-bottom: 50px;
+}
+/* line 4, ../__compass/sass/_form.sass */
+#wrapper h1 #small {
+  font-size: 50%;
+  font-weight: 200;
+  margin-left: 50px;
+}
+/* line 8, ../__compass/sass/_form.sass */
+#wrapper h1 #small b {
+  color: #00c8c8;
+}
+/* line 10, ../__compass/sass/_form.sass */
+#wrapper #formcon {
+  text-align: left;
+  color: black;
+  -ms-input-placeholder-color: black;
+}
+/* line 13, ../__compass/sass/_form.sass */
+#wrapper #formcon ::-webkit-input-placeholder {
+  color: black;
+}
+/* line 15, ../__compass/sass/_form.sass */
+#wrapper #formcon ::-moz-placeholder {
+  color: black;
+}
+/* line 19, ../__compass/sass/_form.sass */
+#wrapper #formcon input:-moz-placeholder {
+  color: black;
+}
+/* line 21, ../__compass/sass/_form.sass */
+#wrapper #formcon form {
+  color: black;
+}
+/* line 23, ../__compass/sass/_form.sass */
+#wrapper #formcon form b {
+  color: #00c8c8;
+}
+/* line 25, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=text],
+#wrapper #formcon form input[type=email],
+#wrapper #formcon form input {
+  background-color: #f7f7f7;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 65%;
+  color: black;
+  font-weight: 200;
+  margin-bottom: 20px;
+  width: 30%;
+}
+/* line 38, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=text]:valid,
+#wrapper #formcon form input[type=email]:valid,
+#wrapper #formcon form input:valid {
+  background-color: #00c8c8;
+  background-color: rgba(0, 200, 200, 0.1);
+}
+/* line 41, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=text]:invalid,
+#wrapper #formcon form input[type=email]:invalid,
+#wrapper #formcon form input:invalid {
+  background-color: red;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 44, ../__compass/sass/_form.sass */
+#wrapper #formcon form textarea {
+  position: relative;
+  width: 60%;
+  margin-top: 2px;
+  float: left;
+  margin-right: 20px;
+  margin-left: 10px;
+  background-color: #f7f7f7;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 65%;
+  color: black;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+/* line 60, ../__compass/sass/_form.sass */
+#wrapper #formcon form textarea:valid {
+  background-color: #00c8c8;
+  background-color: rgba(0, 200, 200, 0.1);
+}
+/* line 63, ../__compass/sass/_form.sass */
+#wrapper #formcon form textarea:invalid {
+  background-color: red;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 66, ../__compass/sass/_form.sass */
+#wrapper #formcon form #ref {
+  width: 90%;
+  background-color: transparent;
+  padding-left: 20px;
+}
+/* line 70, ../__compass/sass/_form.sass */
+#wrapper #formcon form #ref:focus {
+  box-shadow: 0 0 3px transparent;
+  border: 1px solid transparent;
+}
+/* line 73, ../__compass/sass/_form.sass */
+#wrapper #formcon form #check {
+  display: none;
+}
+/* line 75, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=submit] {
+  margin-right: 20px;
+  background-color: #00c8c8;
+  color: black;
+}
+/* line 79, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=submit]:valid {
+  background-color: rgba(0, 200, 200, 0.8);
+}
+/* line 81, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=reset] {
+  width: 15%;
+  float: left;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+/* line 87, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=reset]:hover {
+  background-color: red;
+  color: white;
+}
+/* line 90, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=submit] {
+  width: 15%;
+  float: left;
+  margin-top: 10px;
+  background-color: #00c8c8;
+  color: white;
+}
+/* line 96, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=submit]:hover {
+  background-color: red;
+}
+/* line 98, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=text],
+#wrapper #formcon form input[type=email],
+#wrapper #formcon form input[type=submit],
+#wrapper #formcon form input[type=reset],
+#wrapper #formcon form textarea {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  border: 1px solid transparent;
+}
+/* line 109, ../__compass/sass/_form.sass */
+#wrapper #formcon form input[type=text]:focus,
+#wrapper #formcon form input[type=email]:focus,
+#wrapper #formcon form input[type=submit]:focus,
+#wrapper #formcon form input[type=reset]:focus,
+#wrapper #formcon form textarea:focus {
+  box-shadow: 0 0 3px #00c8c8;
+  border: 1px solid #00c8c8;
+}
+/* line 116, ../__compass/sass/_form.sass */
+#wrapper #formcon form label, #wrapper #formcon form #content #find_cont #search input, #content #find_cont #search #wrapper #formcon form input, #wrapper #formcon form #content #data_cont #search input, #content #data_cont #search #wrapper #formcon form input, #wrapper #formcon form #content #find_cont #search #find, #content #find_cont #search #wrapper #formcon form #find, #wrapper #formcon form #content #data_cont #search #find, #content #data_cont #search #wrapper #formcon form #find,
+#wrapper #formcon form #content #find_cont #search #pricerange,
+#content #find_cont #search #wrapper #formcon form #pricerange,
+#wrapper #formcon form #content #data_cont #search #pricerange,
+#content #data_cont #search #wrapper #formcon form #pricerange {
+  font-size: 90%;
+  padding-left: 20px;
+  font-weight: 800;
+  color: #00c8c8;
+}
+
+/* line 2, ../__compass/sass/_facts.sass */
+#content #data_cont {
+  top: -80px;
+  height: 80px;
+  background-color: #00c8c8;
+  background-color: rgba(0, 200, 200, 0.3);
+}
+
+/* line 9, ../__compass/sass/_facts.sass */
+#facts {
+  text-align: left;
+  width: 978px;
+  height: 100%;
+  font-size: 70%;
+  font-weight: 100;
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+  padding: 0;
+}
+/* line 20, ../__compass/sass/_facts.sass */
+#facts li {
+  display: block;
+  float: left;
+  padding: 3px 10px 3px 10px;
+  width: auto;
+  border: 1px solid;
+  border-color: white;
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin-right: 15px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 33, ../__compass/sass/_facts.sass */
+#facts li b {
+  color: red;
+  padding: 0px 0px 0px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 120%;
+}
+/* line 39, ../__compass/sass/_facts.sass */
+#facts li.red {
+  background-color: rgba(0, 0, 0, 0.5);
+  float: right;
+  width: auto;
+  font-weight: 100;
+  text-align: center;
+}
+/* line 45, ../__compass/sass/_facts.sass */
+#facts li.red b {
+  color: white;
+  font-weight: 400;
+  margin-right: 10px;
+}
+/* line 49, ../__compass/sass/_facts.sass */
+#facts li#img {
+  display: block;
+  height: 30px;
+  width: 38px;
+  margin-right: 0px;
+  background-color: black;
+  background-image: url(../_img/ico/mail.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  padding: 0;
+}
+/* line 60, ../__compass/sass/_facts.sass */
+#facts li#img:hover {
+  background-color: red;
+  background-image: url(../_img/ico/mail.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  padding: 0;
+}
+/* line 67, ../__compass/sass/_facts.sass */
+#facts li#img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 25, ../__compass/sass/global.sass */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 31, ../__compass/sass/global.sass */
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+/* line 38, ../__compass/sass/global.sass */
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  color: black;
+  text-align: center;
+}
