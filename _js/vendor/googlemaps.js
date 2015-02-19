@@ -119,7 +119,7 @@
                				draggable: false,
 				});
 				infowindow = new google.maps.InfoWindow({
-					content:'<b>Bureau-Maurice</b> <br> Fruithoflaan 37 bus 3 <br> 26000 Bergem' 
+					content:'<b>Bureau-Maurice</b> <br> Fruithoflaan 37 bus 3 <br> 2600 Bergem' 
 				});
 				google.maps.event.addListener(marker, 'click', function(){
 					infowindow.open(map,marker);

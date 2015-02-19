@@ -169,8 +169,10 @@
   margin-left: 1.6%;
   margin-top: 10px;
   float: left;
+  padding-bottom: 15px;
+  border-bottom: 1px double rgba(0, 0, 0, 0.1);
 }
-/* line 53, ../__compass/sass/_content.sass */
+/* line 55, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info {
   position: relative;
   text-align: left;
@@ -183,7 +185,7 @@
   padding: 20px 0;
   font-weight: 100;
 }
-/* line 64, ../__compass/sass/_content.sass */
+/* line 66, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #text {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -199,7 +201,7 @@
   max-height: 40px;
   min-height: 40px;
 }
-/* line 78, ../__compass/sass/_content.sass */
+/* line 80, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #text:after {
   content: "...";
   font-weight: 400;
@@ -211,15 +213,15 @@
   color: black;
   border-right: 10px;
 }
-/* line 88, ../__compass/sass/_content.sass */
+/* line 90, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h2 {
   height: auto;
   display: block;
   font-weight: 800;
-  font-size: 200%;
+  font-size: 150%;
   margin-top: 10px;
 }
-/* line 94, ../__compass/sass/_content.sass */
+/* line 96, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info h6 {
   display: block;
   width: auto;
@@ -234,7 +236,7 @@
   -ms-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 104, ../__compass/sass/_content.sass */
+/* line 106, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra {
   position: absolute;
   bottom: 10px;
@@ -254,12 +256,12 @@
   font-size: 200%;
   font-weight: 400;
 }
-/* line 119, ../__compass/sass/_content.sass */
+/* line 121, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #extra:hover {
   color: white;
   background-color: red;
 }
-/* line 122, ../__compass/sass/_content.sass */
+/* line 124, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img {
   overflow: hidden;
   width: 100%;
@@ -268,7 +270,7 @@
   padding: 0;
   margin-right: 50px;
 }
-/* line 129, ../__compass/sass/_content.sass */
+/* line 131, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img img {
   width: 100%;
   margin: 0;
@@ -278,7 +280,7 @@
   -ms-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 134, ../__compass/sass/_content.sass */
+/* line 136, ../__compass/sass/_content.sass */
 #content #wrapper #frituren #info #img .verkocht {
   position: absolute;
   width: auto;
@@ -294,7 +296,7 @@
   -ms-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 146, ../__compass/sass/_content.sass */
+/* line 148, ../__compass/sass/_content.sass */
 #content #wrapper #detail {
   position: relative;
   width: 100%;
@@ -303,7 +305,7 @@
   font-size: 60%;
   line-height: 20px;
 }
-/* line 153, ../__compass/sass/_content.sass */
+/* line 155, ../__compass/sass/_content.sass */
 #content #wrapper #detail img {
   width: 50%;
   -webkit-border-radius: 5px;
@@ -314,12 +316,12 @@
   float: right;
   margin-left: 5%;
 }
-/* line 159, ../__compass/sass/_content.sass */
+/* line 161, ../__compass/sass/_content.sass */
 #content #wrapper #detail h6 {
   margin-top: 15px;
   font-size: 120%;
 }
-/* line 162, ../__compass/sass/_content.sass */
+/* line 164, ../__compass/sass/_content.sass */
 #content #wrapper #detail .verkocht {
   position: absolute;
   width: auto;
@@ -335,7 +337,7 @@
   -ms-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 173, ../__compass/sass/_content.sass */
+/* line 175, ../__compass/sass/_content.sass */
 #content #wrapper #detail #mailref {
   padding: 10px 20px;
   background-color: #00c8c8;
@@ -347,7 +349,7 @@
   text-align: center;
   width: 100%;
 }
-/* line 180, ../__compass/sass/_content.sass */
+/* line 182, ../__compass/sass/_content.sass */
 #content #wrapper #detail #mailref:hover {
   background-color: red;
 }
