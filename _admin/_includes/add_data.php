@@ -22,6 +22,9 @@
 		<label for='info' id="header">Info:</label>
 		<textarea type='text' name='info_2' id='info' rows='10' cols='25' maxlength="255" value=""></textarea><br>
 
+		<label for='ref' id="header">Referentie</label>
+		<input type='text' name='ref_2' id='ref'  maxlength="50" value=""/><br>
+
 		<label for='status' id="header">Status</label>
 		<select name='status_2' id='status' />
 			<option value="0">Verkocht</option>

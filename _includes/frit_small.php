@@ -1,6 +1,6 @@
 <div id="frituren">
 	<div id="info">
-		<h2><?php echo htmlspecialchars_decode($f2); ?></h2><a href="details.php?id=<?php echo htmlspecialchars_decode($f11);?>"><div id="extra">+</div></a>
+		<h2><?php echo htmlspecialchars_decode($f2); ?></h2><a href="details.php?id=<?php echo htmlspecialchars_decode($f11);?>#data_cont"><div id="extra">+</div></a>
 		<div id="img">
 			<div class="<?php echo htmlspecialchars_decode($f12);?>"><?php echo htmlspecialchars_decode($f12);?></div>
 			<img src="_img/zaken/<?php echo htmlspecialchars_decode($f10);?>" alt="<?php echo htmlspecialchars_decode($f10); ?>">

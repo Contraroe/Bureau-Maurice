@@ -1,25 +1,28 @@
 <?php 
 	include ('../../_php/db_config.php');
 	include ('../../_php/db_connect.php');
-	mysql_query("SET NAMES 'utf8'");
-	ini_set('display_errors',1);
-	ini_set('display_startup_errors',1);
-	error_reporting(-1);
-	$u_zaak_id_2 = html_entity_decode(addslashes($_GET['z_id_2']));
-	$u_regio_2 = html_entity_decode(addslashes($_GET['regio_2']));
-	$u_locatie_2 = html_entity_decode(addslashes($_GET['locatie_2']));
-	$u_prijs_2 = html_entity_decode(addslashes($_GET['prijs_2']));
-	$u_huur_2 = html_entity_decode(addslashes($_GET['huur_2']));
-	$u_reden_2 = html_entity_decode(addslashes($_GET['reden_2']));
-	$u_info_2 = html_entity_decode(addslashes($_GET['info_2']));
-	$u_status_2 = html_entity_decode(addslashes($_GET['status_2']));
-	$u_cat_id_2 = html_entity_decode(addslashes($_GET['cat_id_2']));
-	$u_ico_2 = html_entity_decode(addslashes($_GET['cat_id_2']));
-	$u_icoimg_2 = $u_ico_2 . ".jpg";
-	$a_update = "	INSERT INTO zaken (regio, locatie, prijs, huur, reden, info, status, cat_id, ico) 
-			VALUES ('$u_regio_2', '$u_locatie_2', '$u_prijs_2', '$u_huur_2', '$u_reden_2', '$u_info_2', '$u_status_2', '$u_cat_id_2', '$u_icoimg_2')
-		";
-	mysql_query($a_update);
+
+	mysqli_query($connect,"SET NAMES 'utf8'");
+	// ini_set('display_errors',1);
+	// ini_set('display_startup_errors',1);
+	// error_reporting(E_ALL);
+
+	$u_zaak_id_2 = $_REQUEST['z_id_2'];
+	$u_regio_2 = $_REQUEST['regio_2'];
+	$u_locatie_2 = $_REQUEST['locatie_2'];
+	$u_prijs_2 = $_REQUEST['prijs_2'];
+	$u_huur_2 = $_REQUEST['huur_2'];
+	$u_reden_2 = $_REQUEST['reden_2'];
+	$u_info_2 = $_REQUEST['info_2'];
+	$u_status_2 = $_REQUEST['status_2'];
+	$u_ref_2 = $_REQUEST['ref_2'];
+	$u_cat_id_2 = $_REQUEST['cat_id_2'];
+	$u_ico = $_REQUEST['cat_id_2'];
+	$u_icoimg_2 = $u_ico . ".jpg";
+	$a_update = mysqli_query($connect, "	INSERT INTO zaken (regio, locatie, prijs, huur, reden, info, status, cat_id, ico, ref) 
+			VALUES ('$u_regio_2', '$u_locatie_2', '$u_prijs_2', '$u_huur_2', '$u_reden_2', '$u_info_2', '$u_status_2', '$u_cat_id_2', '$u_icoimg_2', '$u_ref_2')
+		");
+	mysqli_query($connect, $a_update);
 	// echo ("id zaak: '$u_zaak_id_2'<br><br>");
 	// echo ("regio: '$u_regio_2'<br><br>");
 	// echo ("locatie: '$u_locatie_2'<br><br>");
