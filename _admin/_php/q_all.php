@@ -26,7 +26,7 @@
 			<td>Regio</td>
 			<td>Prijs </td>
 			<td>Status</td>
-			<td>Referentie</td>
+			<td> BM Ref.</td>
 			<td>Wijzig</td>
 		</tr>
 
@@ -74,7 +74,7 @@
 		$f1=html_entity_decode($row[3]); //regio
 		$f2=html_entity_decode($row[5]); // prijs
 		$f3=html_entity_decode($row[4]); //huur
-		$f4=html_entity_decode($row[14]); //cat
+		$f4=html_entity_decode($row[15]); //cat
 		$f5=html_entity_decode($row[0]); //zaak_id
 		$f6=html_entity_decode($row[9]); // status
 		$f7=html_entity_decode($row[10]); // actief

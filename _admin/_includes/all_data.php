@@ -12,7 +12,7 @@
 		<td><?php echo html_entity_decode($f1); ?></td>
 		<td><?php echo html_entity_decode($f2); ?> &euro;</td>
 		<td><?php echo html_entity_decode($f6); ?></td>
-		<td><?php echo html_entity_decode($f10); ?></td>
+		<td><?php echo html_entity_decode($f9); ?></td>
 		<td><a href="index.php?ref=<?php echo html_entity_decode($f5); ?>">+</a></td>
 	</tr>
 

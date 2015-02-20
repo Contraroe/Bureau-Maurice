@@ -45,7 +45,7 @@
 			$f4=html_entity_decode($row[4]);
 			$f5=html_entity_decode($row[6]);
 			$f6=html_entity_decode($row[5]);
-			$f7=html_entity_decode($row[14]);
+			$f7=html_entity_decode($row[15]);
 			$f10=html_entity_decode($row[8]);
 			$f11=html_entity_decode($row[0]);
 			$f12=html_entity_decode($row[9]);
@@ -91,7 +91,7 @@
 			$f4=html_entity_decode($row[4]);
 			$f5=html_entity_decode($row[6]);
 			$f6=html_entity_decode($row[5]);
-			$f7=html_entity_decode($row[14]);
+			$f7=html_entity_decode($row[15]);
 			$f10=html_entity_decode($row[8]);
 			$f11=html_entity_decode($row[0]);
 			$f12=html_entity_decode($row[9]);

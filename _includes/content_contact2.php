@@ -6,6 +6,7 @@
 		<?php include '_includes/facts.php' ?>
 
 		<?php $zaak= $_REQUEST['zaak']; ?>
+		<?php $bmref= $_REQUEST['bmref']; ?>
 
 		
 	</div>

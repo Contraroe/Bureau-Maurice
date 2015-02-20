@@ -45,7 +45,7 @@
 			$f3=html_entity_decode($row[5]);
 			$f4=html_entity_decode($row[4]);
 			$f5=html_entity_decode($row[6]);
-			$f6=html_entity_decode($row[14]);
+			$f6=html_entity_decode($row[15]);
 			$f7=html_entity_decode($row[8]);
 			$f8=html_entity_decode($row[0]);
 			$f9=html_entity_decode($row[9]);

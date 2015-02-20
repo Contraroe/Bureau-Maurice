@@ -28,7 +28,8 @@
 		$f1=html_entity_decode($row[7]); //info
 		$f7=html_entity_decode($row[8]); //ico
 		$f9=html_entity_decode($row[9]); //status
-		$f10=html_entity_decode($row[13]); //ref
+		$f10=html_entity_decode($row[14]); //Cat_ID
+		$f11=html_entity_decode($row[13]); //ref
 
 	?>		
 	<!-- Dbase Content Layout -->
@@ -57,7 +58,7 @@
 		<textarea type='text' name='info' id='info' rows='10' cols='25' maxlength="255" value=""><?php echo html_entity_decode($f1); ?></textarea><br>
 
 		<label for='ref' id="header">Referentie</label>
-		<input type='text' name='ref' id='ref'  maxlength="50" value="<?php echo html_entity_decode($f10); ?>"/><br>
+		<input type='text' name='ref' id='ref'  maxlength="50" value="<?php echo html_entity_decode($f11); ?>"/><br>
 
 		<label for='status' id="header">Status</label>
 		<select name='status' id='status' />

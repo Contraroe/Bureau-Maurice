@@ -6,12 +6,14 @@ $email = stripslashes($_POST['email'])."\r\n";
 $adres = stripslashes($_POST['adres'])."\r\n";
 $check = stripslashes($_POST['check'])."\r\n"; // must be empty
 $ref = stripslashes($_POST['ref'])."\r\n"; 
+$bmref = stripslashes($_POST['bmref'])."\r\n"; 
 
 $subject = "Bureau-Maurice online!";
 $host = "info@bureau-maurice.be";
 
 $body = <<<EOD
-$ref\r\n\r\n
+$ref\r\n
+BM referentie: $bmref\r\n
 $message\r\n
 Name: $name
 Email: $email

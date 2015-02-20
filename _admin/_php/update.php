@@ -2,9 +2,9 @@
 	include ('../../_php/db_config.php');
 	include ('../../_php/db_connect.php');
 
-	// ini_set('display_errors',1);
-	// ini_set('display_startup_errors',1);
-	// error_reporting(E_ALL);
+	ini_set('display_errors',1);
+	ini_set('display_startup_errors',1);
+	error_reporting(E_ALL);
 
 	mysqli_query($connect, "SET NAMES 'utf8'");
 	$u_zaak_id = $_REQUEST['z_id'];
@@ -29,8 +29,8 @@
 				info='$u_info',
 				status='$u_status',
 				cat_id='$u_cat_id',
-				ico='$u_icoimg'
-				ref='$u_ref',
+				ico='$u_icoimg',
+				ref='$u_ref'
 			WHERE zaak_id='$u_zaak_id'
 		");
 
@@ -44,6 +44,7 @@
 	// echo ("status: '$u_status'<br><br>");
 	// echo ("cat_id: '$u_cat_id'<br><br>");
 	// echo ("ico: '$u_icoimg'<br><br>");
+	// echo ("ref: '$u_ref'<br><br>");
 
 	mysqli_query($connect, $update);
 	mysqli_close($connect);
