@@ -5,6 +5,7 @@ include ('../../_php/db_connect.php');
 
 	$ref= $_REQUEST['ref'];
 	$active= $_REQUEST['active'];
+	$find= $_REQUEST['find'];
 
 	if ($active ==='1') {
 		$active = '0';

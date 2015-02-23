@@ -3,20 +3,39 @@
 <div id="left_all">
 
 <?php
+	mysqli_query($connect,"SET NAMES 'utf8'");
+
+	if (isset($_POST['find']))
+	    {
+	    $find = $_POST['find'];
+		}
+	    else
+	    {
+	    $_POST['find']="undefine";
+	    }
+
 
 	$sort= $_REQUEST['sort'];
+
 	if ($sort === null ){ $sort = '1';};
 ?>
 	<h1>Alle Handelszaken</h1>
 
 	<table>
 		<tr id="sorting">
-			<td  colspan="9">
+			<td  colspan="6">
+
 				<a href="index.php?sort=1" class="<?php if ($sort === '1') { echo "active";}; ?>">alle</a>
 				<a href="index.php?sort=2" class="<?php if ($sort === '2') { echo "active";}; ?>">actieve</a>
 				<a href="index.php?sort=3" class="<?php if ($sort === '3') { echo "active";}; ?>">inactieve</a>
-				Selecteer :
-		</td>
+				Selecteer : <?php echo $find; ?>
+			</td>
+			<td colspan="3">
+				<form name="search" id="find" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+					<input type="text" name="find" id="find" value="Plaats of Type" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Postcode':this.value;"/>
+					<input type="submit" id="go" name="go" value="Ga" />
+				</form>
+			</td>
 		</tr>
 		<tr id="header">
 			<td>Actief</td>
@@ -32,11 +51,20 @@
 
 	<!-- Dbase Content -->
 <?php
-	
+
 	mysqli_query($connect,"SET NAMES 'utf8'");
 
 	// print $sort;
-	if($sort === '2') {
+	if(!empty($find)) {
+		$result = mysqli_query($connect," SELECT *
+						FROM zaken
+						LEFT JOIN category
+						ON zaken.cat_id = category.cat_id
+						WHERE active = '1'
+						AND ( locatie LIKE '%$find%' OR regio LIKE '%$find%' OR ref LIKE '%$find%' OR cat LIKE '%$find%' )
+						ORDER BY zaak_id ASC
+					");
+	} else if($sort === '2') {
 		$result = mysqli_query($connect," SELECT *
 						FROM zaken
 						LEFT JOIN category
