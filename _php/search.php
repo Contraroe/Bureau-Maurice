@@ -1,5 +1,6 @@
 <div id="wrapper">
 	<h1>Overnames</h1>
+
 	<?php
 	    if (isset($_POST['find']))
 	    {
@@ -24,13 +25,11 @@
 							LEFT JOIN category
 							ON zaken.cat_id = category.cat_id
 							WHERE active = '1'
-							AND ( locatie LIKE '%$find%' OR regio LIKE '%$find%' OR cat LIKE '%$find%' )
+							AND ( locatie OR regio OR cat LIKE '%$find%' )
 
 							");
 			$numa=mysqli_num_rows($result);
 			mysqli_close($connect);
-
-
 			if (!empty($numa)) {
 
 

@@ -30,7 +30,7 @@
 		 	<form id="form" method="post" action="_php/mailform.php">
 		 		<label>Refentie :</label>
 		 		<input type="text" name="ref" id="ref" Value="<?php echo htmlspecialchars_decode($zaak);?>" readonly/><br>
-		 		<textarea name="message" id="message" rows="15" cols="60" required="Message" placeholder="Bericht"></textarea>
+		 		<textarea name="message" id="message" rows="10" cols="60" required="Message" placeholder="Bericht"></textarea>
 				<input type="text" name="naam" id="naam" required="Name" placeholder="Naam"/> <b>*</b><br />
 				<input type="text" name="adres" id="adres" placeholder="Adress" required="Adress"/> <b>*</b><br />
 				<input type="email" placeholder="Email adres" pattern="[^ @]*@[^ @]*.*" name="email" id="email" required="E-mail"/> <b>*</b><br />
