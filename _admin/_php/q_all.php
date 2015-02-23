@@ -23,12 +23,15 @@
 
 	<table>
 		<tr id="sorting">
-			<td  colspan="6">
-
-				<a href="index.php?sort=1" class="<?php if ($sort === '1') { echo "active";}; ?>">alle</a>
-				<a href="index.php?sort=2" class="<?php if ($sort === '2') { echo "active";}; ?>">actieve</a>
-				<a href="index.php?sort=3" class="<?php if ($sort === '3') { echo "active";}; ?>">inactieve</a>
+			<td  colspan="2">
 				Selecteer : <?php echo $find; ?>
+			<td>
+			<td  colspan="4" width="400px">
+				<ul>
+					<li><a href="index.php?sort=3" class="<?php if ($sort === '3') { echo "active";}; ?>">inactieve</a></li>
+					<li><a href="index.php?sort=2" class="<?php if ($sort === '2') { echo "active";}; ?>">actieve</a></li>
+					<li><a href="index.php?sort=1" class="<?php if ($sort === '1') { echo "active";}; ?>">alle</a></li>
+				</ul>
 			</td>
 			<td colspan="3">
 				<form name="search" id="find" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">

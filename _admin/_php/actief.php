@@ -5,7 +5,14 @@ include ('../../_php/db_connect.php');
 
 	$ref= $_REQUEST['ref'];
 	$active= $_REQUEST['active'];
-	$find= $_REQUEST['find'];
+	if (isset($_POST['find']))
+	    {
+	    $find = $_POST['find'];
+		}
+	    else
+	    {
+	    $_POST['find']="undefine";
+	    }
 
 	if ($active ==='1') {
 		$active = '0';

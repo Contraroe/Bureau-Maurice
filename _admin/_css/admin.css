@@ -92,7 +92,6 @@ body #wrapper #left_all table tr td, body #wrapper #left_all table tr.active td 
 }
 /* line 69, ../__compass/sass/admin.sass */
 body #wrapper #left_all table tr td a, body #wrapper #left_all table tr.active td a {
-  width: auto;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -108,16 +107,91 @@ body #wrapper #left_all table tr td a, body #wrapper #left_all table tr.active t
   font-weight: 800;
   box-shadow: 1px 1px 2px black;
 }
-/* line 82, ../__compass/sass/admin.sass */
+/* line 81, ../__compass/sass/admin.sass */
 body #wrapper #left_all table tr td a:hover {
   background-color: red;
   box-shadow: inset 1px 1px 2px black;
 }
-/* line 85, ../__compass/sass/admin.sass */
-body #wrapper #left_all table tr.active {
-  background-color: #00c8c8;
+/* line 84, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td a.actief0 {
+  background-color: red;
+}
+/* line 86, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td a.active {
+  background-color: red;
 }
 /* line 88, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td ul, body #wrapper #left_all table tr.active td ul {
+  list-style: none;
+}
+/* line 90, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td ul li, body #wrapper #left_all table tr.active td ul li {
+  float: left;
+  width: 30%;
+  margin-left: 10px;
+  height: 20px;
+}
+/* line 95, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td ul li a, body #wrapper #left_all table tr.active td ul li a {
+  height: 20px;
+  line-height: 22px;
+  margin-top: -10px;
+}
+/* line 99, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td form, body #wrapper #left_all table tr.active td form {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 103, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td form #find {
+  height: 20px;
+  padding: 3px;
+  border: 0;
+  font-size: 70%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+  font-weight: 100;
+  color: white;
+  width: 200px;
+  height: 15px;
+  font-size: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 120, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td form input[type="submit"], body #wrapper #left_all table tr td #edit form select[type="submit"], body #wrapper #edit #left_all table tr td form select[type="submit"], body #wrapper #left_all table tr td #add form select[type="submit"], body #wrapper #add #left_all table tr td form select[type="submit"] {
+  width: 40px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-weight: 100;
+  margin-right: 0px;
+  padding: 4px;
+  height: 25px;
+  line-height: 10px;
+}
+/* line 131, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr td form input[type="submit"]:hover, body #wrapper #left_all table tr td #edit form select[type="submit"]:hover, body #wrapper #edit #left_all table tr td form select[type="submit"]:hover, body #wrapper #left_all table tr td #add form select[type="submit"]:hover, body #wrapper #add #left_all table tr td form select[type="submit"]:hover {
+  background-color: rgba(0, 200, 200, 0.9);
+  color: white;
+  box-shadow: inset 1px 1px 2px black;
+}
+/* line 135, ../__compass/sass/admin.sass */
+body #wrapper #left_all table tr.active {
+  background-color: rgba(0, 200, 200, 0.5);
+}
+/* line 138, ../__compass/sass/admin.sass */
 body #wrapper #edit, body #wrapper #add {
   color: white;
   background-color: #00c8c8;
@@ -135,12 +209,12 @@ body #wrapper #edit, body #wrapper #add {
   overflow: auto;
   white-space: nowrap;
 }
-/* line 100, ../__compass/sass/admin.sass */
+/* line 150, ../__compass/sass/admin.sass */
 body #wrapper #edit form, body #wrapper #add form {
   text-align: left;
   color: black;
 }
-/* line 103, ../__compass/sass/admin.sass */
+/* line 153, ../__compass/sass/admin.sass */
 body #wrapper #edit form label, body #wrapper #add form label {
   display: block;
   text-decoration: uppercase;
@@ -148,7 +222,7 @@ body #wrapper #edit form label, body #wrapper #add form label {
   color: white;
   padding: 10px 0px 5px 0px;
 }
-/* line 109, ../__compass/sass/admin.sass */
+/* line 159, ../__compass/sass/admin.sass */
 body #wrapper #edit form #submit, body #wrapper #add form #submit {
   text-decoration: none;
   color: white;
@@ -167,17 +241,17 @@ body #wrapper #edit form #submit, body #wrapper #add form #submit {
   float: left;
   width: 105%;
 }
-/* line 124, ../__compass/sass/admin.sass */
+/* line 174, ../__compass/sass/admin.sass */
 body #wrapper #edit form #submit:hover, body #wrapper #add form #submit:hover {
   background-color: red;
   box-shadow: inset 1px 1px 2px black;
 }
-/* line 127, ../__compass/sass/admin.sass */
+/* line 177, ../__compass/sass/admin.sass */
 body #wrapper #edit form textarea, body #wrapper #add form textarea {
   resize: none;
   white-space: pre-wrap;
 }
-/* line 130, ../__compass/sass/admin.sass */
+/* line 180, ../__compass/sass/admin.sass */
 body #wrapper #edit form textarea, body #wrapper #add form textarea,
 body #wrapper #edit form input,
 body #wrapper #add form input,
@@ -195,7 +269,7 @@ body #wrapper #add form select {
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 800;
 }
-/* line 140, ../__compass/sass/admin.sass */
+/* line 190, ../__compass/sass/admin.sass */
 body #wrapper #edit form select, body #wrapper #add form select {
   width: 105%;
   color: black;
@@ -203,7 +277,7 @@ body #wrapper #edit form select, body #wrapper #add form select {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 147, ../__compass/sass/admin.sass */
+/* line 197, ../__compass/sass/admin.sass */
 body #wrapper #add {
   background-color: red;
   background-color: rgba(255, 0, 0, 0.9);
@@ -216,14 +290,14 @@ body #wrapper #add {
   scrollbar-shadow-color: #00c8c8;
   scrollbar-dark-shadow-color: #00c8c8;
 }
-/* line 153, ../__compass/sass/admin.sass */
+/* line 203, ../__compass/sass/admin.sass */
 body #wrapper #add form input, body #wrapper #add form select,
 body #wrapper #add form textarea {
   background-color: rgba(255, 255, 255, 0.4);
   resize: none;
   white-space: pre-wrap;
 }
-/* line 158, ../__compass/sass/admin.sass */
+/* line 208, ../__compass/sass/admin.sass */
 body #wrapper #add form select {
   width: 105%;
   color: black;
@@ -231,7 +305,7 @@ body #wrapper #add form select {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 166, ../__compass/sass/admin.sass */
+/* line 216, ../__compass/sass/admin.sass */
 body #wrapper #add form #submit:hover {
   background-color: #00c8c8;
   box-shadow: inset 1px 1px 2px black;
