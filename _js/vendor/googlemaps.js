@@ -1,5 +1,5 @@
 			function init_map(){
-			var 
+			var
 				myOptions = {
 					zoom:12,
 					center:new google.maps.LatLng(51.181964, 4.4370347000000265),mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -9,30 +9,30 @@
 					mapTypeControl: false,
 					streetViewControl: false,
 					styles: [
-						// {	
-						// 	stylers: [
-						// 		{ visibility: "simplified" },
-						// 		{ color: "#000000"},
-						// 		{ lightness: 25}
-						// 	]
-						// },
+						//{
+						//	stylers: [
+						//		{ visibility: "simplified" },
+						//		{ color: "#000000"},
+						//		{ lightness: 25}
+						//	]
+						//},
 						{
-   							featureType: 'road',
-    							elementType: 'geometry',
-   							stylers: [
-      								{ color: '#000000'},
-      								{ lightness: 30}
-    							]
-  						},
-  						{
-   							featureType: 'road',
-    							elementType: 'geometry.stroke',
-   							stylers: [
-      								{ color: '#000000'},
-      								{ lightness: 25}
-    							]
-  						},
-  						{
+							featureType: 'road',
+							elementType: 'geometry',
+							stylers: [
+								{ color: '#000000'},
+								{ lightness: 30}
+							]
+						},
+						{
+							featureType: 'road',
+							elementType: 'geometry.stroke',
+							stylers: [
+								{ color: '#000000'},
+								{ lightness: 25}
+							]
+						},
+						{
 							featureType: "road",
 							elementType: "labels",
 							stylers: [
@@ -55,7 +55,7 @@
 								{ color: '#000000' }
 							]
 						},
-  						{
+						{
 							featureType: 'landscape',
 							elementType: 'all',
 							stylers: [
@@ -71,7 +71,7 @@
 							stylers: [
 								{ visibility: "off" }
 							]
-						},					
+						},
 						{
 							featureType: "transit",
 							elementType: "all",
@@ -116,13 +116,13 @@
 					position: new google.maps.LatLng(51.181964, 4.4370347000000265),
 					icon: '_img/ico/locator.png',
 					animation: google.maps.Animation.DROP,
-               				draggable: false,
+					draggable: false,
 				});
 				infowindow = new google.maps.InfoWindow({
-					content:'<b>Bureau-Maurice</b> <br> Fruithoflaan 37 bus 3 <br> 2600 Bergem' 
+					content:'<b>Bureau-Maurice</b> <br> Fruithoflaan 37 bus 4 <br> 2600 Berchem'
 				});
 				google.maps.event.addListener(marker, 'click', function(){
 					infowindow.open(map,marker);
-				})	
+				})
 			;}
 			google.maps.event.addDomListener(window, 'load', init_map);
